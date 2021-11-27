@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #0b132a;
+  font-size: 1.4rem;
+}
+
+input,
+button {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn-primary-hover {
+  transition: all 0.3s linear;
+}
+.btn-primary-hover:hover {
+  transform: translateY(-1rem);
+}
+
+.bg-color {
+  background-image: linear-gradient(#fbfbfb, white);
+}
+
+.ml-content {
+  margin-left: 15rem;
+}
+
+.block-box {
+  max-width: 55.5rem;
+  margin: 0 auto;
+}
+.block-box-title {
+  color: #0b132a;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 38.3rem;
+  margin: 0 auto;
+  line-height: 1.43;
+}
+.block-box-desc {
+  color: #4f5665;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.875;
+  margin-top: 2rem;
+}
+.block-box-desc strong {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */
