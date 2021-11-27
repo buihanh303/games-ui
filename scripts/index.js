@@ -11,3 +11,15 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
   });
 });
+
+const btnToggle = document.querySelector(".header-bar");
+const menuHeader = document.querySelector(".header-list");
+const btnCloseMenu = document.querySelector(".header-close-icon");
+const isActive = "is-expand";
+btnToggle.addEventListener("click", () => {
+  menuHeader.classList.add(isActive);
+});
+
+btnCloseMenu.addEventListener("click", () => {
+  menuHeader.classList.remove(isActive);
+});

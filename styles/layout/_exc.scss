@@ -1,0 +1,106 @@
+.exc {
+  background-color: #292f40;
+  &-container {
+    max-width: $container;
+    padding: 10rem 1.5rem 0;
+    margin: 0 auto;
+    color: white;
+  }
+  &-title {
+    @include textStyle(white, 3.2rem, 500);
+    text-align: center;
+  }
+  &-desc {
+    @include textStyle(white);
+    text-align: center;
+    margin: 2rem 0;
+  }
+  &-item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+  }
+  &-item:nth-child(1) {
+    background-image: url("./images/img-exc-01.png");
+    width: 1014px;
+    height: 344px;
+    padding-right: 45%;
+    padding-top: 10px;
+    -webkit-transform: translateX(27px);
+    transform: translateX(27px);
+  }
+  &-item:nth-child(2) {
+    background-image: url("./images/img-exc-02.png");
+    width: 960px;
+    height: 383px;
+    margin-top: -60px;
+    padding-left: 40%;
+    padding-top: 90px;
+  }
+  &-item:nth-child(3) {
+    background-image: url("./images/img-exc-03.png");
+    width: 960px;
+    height: 332px;
+    padding-right: 45%;
+    padding-top: 50px;
+    margin-top: 15px;
+  }
+  &-item-title {
+    font-size: 3rem;
+  }
+  &-item-desc {
+    margin-top: 1.5rem;
+  }
+  @include maxWidth(1300px) {
+    &-item:not(:nth-child(99)) {
+      &::after {
+        height: 0;
+        margin-top: 30px;
+        content: " ";
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+      }
+    }
+    &-item:nth-child(1),
+    &-item:nth-child(2),
+    &-item:nth-child(3) {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      background-image: none !important;
+      width: 100%;
+      height: unset;
+      padding: 45px 2rem 5rem;
+      margin-top: 30px;
+    }
+    &-item:nth-child(1)::after {
+      padding-bottom: 79.143%;
+      background-image: url("./images/img-exc-mobile-01.png");
+    }
+    &-item:nth-child(2)::after {
+      padding-bottom: 145.076%;
+      background-image: url("./images/img-exc-mobile-02.png");
+    }
+    &-item:nth-child(3)::after {
+      padding-bottom: 122.769%;
+      background-image: url("./images/img-exc-mobile-03.png");
+    }
+    &-item {
+      background: #1f2330;
+      border-radius: 20px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.video {
+  background-color: white;
+  &-container {
+    @include flexBox(center, center);
+    padding: 10rem 1.5rem 21rem;
+    position: relative;
+  }
+  &-title {
+    @include textStyle($title-color, 3.2rem, 500);
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  &-desc {
+    @include textStyle($title-color, 1.6rem, 400);
+    line-height: 1.4;
+    margin-top: 2.4rem;
+  }
+  &-animal-img {
+    position: absolute;
+    max-width: 40rem;
+    left: 23%;
+    bottom: 0;
+    transform: translateY(52%);
+  }
+  @include minWidth(1024px) {
+    &-left {
+      max-width: 46rem;
+      height: auto;
+      margin-right: 8rem;
+    }
+    &-right {
+      max-width: 67rem;
+    }
+  }
+  @include maxWidth(1023px) {
+    &-container {
+      flex-direction: column;
+      padding-top: 4rem;
+      padding-bottom: 13rem;
+    }
+    &-left {
+      margin: 0 0 3rem;
+    }
+    &-title {
+      text-align: center;
+      font-size: 3rem;
+    }
+    &-animal-img {
+      max-width: 24rem;
+      left: 50%;
+      transform: translate(-50%, 32%);
+    }
+  }
+}

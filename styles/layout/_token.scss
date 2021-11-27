@@ -1,0 +1,88 @@
+.token {
+  padding: 20rem 0 2rem;
+  background-color: #292f40;
+  &-container {
+    max-width: $container;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+  }
+  &-title {
+    @include textStyle(white, 3.2rem, 500);
+    text-align: center;
+  }
+  &-chart {
+    @include flexBox();
+    background-color: #1f2330;
+    max-width: 96rem;
+    margin: 7rem auto 0;
+    border-radius: 2rem;
+  }
+  &-chart-img:nth-child(1) {
+    max-width: 19.3rem;
+    top: -82px;
+    left: 124px;
+  }
+  &-chart-img:nth-child(2) {
+    max-width: 13.8rem;
+    top: 119px;
+    left: 117px;
+  }
+  &-chart-img:nth-child(3) {
+    top: 42px;
+    left: -95px;
+    max-width: 16.2rem;
+  }
+  &-chart-img:nth-child(4) {
+    max-width: 24.9rem;
+    left: 48px;
+    bottom: -19px;
+  }
+  &-chart-right {
+    max-width: 54.7rem;
+    padding: 5rem 5rem 5rem 0;
+  }
+  &-chart-left {
+    flex: 1;
+    position: relative;
+    img {
+      position: absolute;
+    }
+  }
+  &-chart-buy {
+    margin-top: 2.5rem;
+    @include flexBox(center, space-between);
+  }
+  &-total {
+    @include textStyle(white, 2rem);
+  }
+  &-btn {
+    @include textStyle(white, 1.8rem, 700);
+    height: 5rem;
+    background: #e12a44;
+    padding: 0 2rem;
+    min-width: 20rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    transition: all 0.25s linear;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  @include maxWidth(1023px) {
+    padding: 35rem 0 2rem;
+    &-chart-left {
+      display: none;
+    }
+    &-chart-right {
+      padding: 0;
+      max-width: 100%;
+      background-color: #292f40;
+    }
+    &-chart-buy {
+      flex-direction: column;
+    }
+    &-btn {
+      margin-top: 2.8rem;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.key {
+  padding-top: 11rem;
+  text-align: center;
+  &-container {
+    @include flexBox(center, center, column);
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  &-title {
+    @include textStyle($title-color, 3.2rem, 500);
+  }
+  &-desc {
+    margin: 2rem 0 5rem;
+    @include textStyle($title-color);
+    max-width: 40rem;
+  }
+  &-stone-img {
+    max-width: 48rem;
+  }
+  &-plate-img {
+    max-width: 70rem;
+    position: relative;
+    animation: plateMove 5s infinite;
+    top: -8rem;
+    z-index: -99;
+  }
+  &-animal-img {
+    max-width: 19.4rem;
+    margin-top: -20rem;
+    margin-bottom: 2.5rem;
+  }
+  &-card-title {
+    @include textStyle(white, 3rem, 500);
+    line-height: 1;
+  }
+  &-card-item {
+    padding: 6rem 4rem;
+    text-align: left;
+  }
+  &-card-item {
+    background-position: 100% 100%;
+    background-size: contain;
+    height: 0;
+    width: 100%;
+    padding: 0 30px 147%;
+    margin: 3rem 0 0;
+    background-repeat: no-repeat;
+  }
+  &-card-item:nth-child(1) {
+    background-image: url("./images/img-card-01.png");
+  }
+  &-card-item:nth-child(2) {
+    background-image: url("./images/img-card-02.png");
+  }
+  &-card-item:nth-child(3) {
+    background-image: url("./images/img-card-03.png");
+  }
+  &-card-desc {
+    @include textStyle(white);
+    margin-top: 1.5rem;
+  }
+  @include minWidth(1024px) {
+    &-card-list {
+      @include flexBox(center, center);
+      transform: translateY(8rem);
+    }
+    &-card-item {
+      padding: 6rem 4rem;
+      background-position: center;
+      background-size: cover;
+      border-radius: 1rem;
+      margin: 0 4rem;
+      @include size(33%, 50rem);
+      transition: all 0.25s linear;
+      &:hover {
+        transform: translateY(-1rem);
+      }
+      border-radius: 1rem;
+    }
+  }
+  @include maxWidth(1023px) {
+    &-stone-img {
+      max-width: 26rem;
+    }
+    &-plate-img {
+      max-width: 30rem;
+      top: -3rem;
+    }
+    &-animal-img {
+      max-width: 13rem;
+      margin-top: -7rem;
+    }
+    &-title {
+      font-size: 3rem;
+    }
+    &-card-title {
+      font-size: 3rem;
+      padding-top: 5rem;
+    }
+    &-card-list {
+      margin-top: -28rem;
+      transform: translateY(28rem);
+    }
+  }
+}
+
+@keyframes plateMove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

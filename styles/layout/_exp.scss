@@ -1,0 +1,23 @@
+.exp {
+  background: url("./images/img-bg-exp.jpg") no-repeat center / cover;
+  &-title {
+    @include textStyle(white, 3.2rem, 500);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &-desc {
+    @include textStyle(white);
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 97rem;
+  }
+  &-container {
+    @include flexBox(center, flex-start, column);
+    max-width: $container;
+    margin: 0 auto;
+    padding-top: 25.6rem;
+  }
+  &-tab {
+    height: 63rem;
+  }
+}
