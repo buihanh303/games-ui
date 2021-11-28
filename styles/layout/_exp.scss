@@ -15,9 +15,86 @@
     @include flexBox(center, flex-start, column);
     max-width: $container;
     margin: 0 auto;
-    padding-top: 25.6rem;
+    padding: 25.6rem 1.5rem 12rem;
   }
   &-tab {
-    height: 63rem;
+    margin-top: 8rem;
+    width: 100%;
+  }
+  &-tab-content {
+    border-radius: 1.8rem;
+    overflow: hidden;
+  }
+  &-tab-item {
+    @include flexBox(stretch, center);
+    display: none;
+  }
+  &-tab-item.is-active {
+    display: flex;
+  }
+  &-tab-item img {
+    width: 30%;
+    max-height: 40rem;
+  }
+  &-video {
+    width: 70%;
+    height: 40rem;
+    background-color: red;
+    flex: 1;
+  }
+  &-list {
+    @include flexBox(center, center);
+    margin-top: 4.5rem;
+  }
+  &-item.is-actived {
+    border-radius: 3rem;
+    border-color: white;
+    transition: all 0.4s linear;
+  }
+  &-item-img {
+    padding: 6px;
+    @include size(4.6rem);
+    border-radius: 50%;
+  }
+  &-item {
+    border: 2px solid transparent;
+    margin-right: 5px;
+    transition: all 0.3s linear;
+  }
+  &-item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  @include maxWidth(1023px) {
+    &-tab {
+      width: 100%;
+      margin-top: 4rem;
+    }
+    &-tab-item img {
+      display: none;
+    }
+    &-video {
+      width: 100%;
+      height: calc(50vw - 2rem);
+    }
+    &-container {
+      padding: 12rem 1.5rem 5rem;
+    }
+    &-list {
+      justify-content: flex-start;
+      margin-top: 2rem;
+      overflow-x: scroll;
+      max-width: 100%;
+      min-height: 4.6rem;
+      padding-top: 1.5rem;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &-item-img {
+      min-width: 4.6rem;
+    }
   }
 }

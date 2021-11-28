@@ -23,3 +23,25 @@ btnToggle.addEventListener("click", () => {
 btnCloseMenu.addEventListener("click", () => {
   menuHeader.classList.remove(isActive);
 });
+
+// tab-content
+
+const itemTabParent = document.querySelectorAll(".exp-item");
+const btnTab = document.querySelectorAll(".btn-tab");
+const tabItem = document.querySelectorAll(".exp-tab-item");
+
+btnTab.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    const indexTab = event.target.id;
+    tabItem.forEach((element) => {
+      element.classList.remove("is-active");
+    });
+    itemTabParent.forEach((element) => {
+      element.classList.remove("is-actived");
+    });
+    event.target.parentElement.classList.add("is-actived");
+    document
+      .querySelector(`.exp-tab-item[data-tab='${indexTab}']`)
+      .classList.add("is-active");
+  });
+});

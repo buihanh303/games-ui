@@ -1,5 +1,6 @@
 .exc {
   background-color: #292f40;
+  position: relative;
   &-container {
     max-width: $container;
     padding: 10rem 1.5rem 0;
@@ -64,6 +65,11 @@
   &-item-desc {
     margin-top: 1.5rem;
   }
+  &-img {
+    position: absolute;
+    display: none;
+  }
+
   @include maxWidth(1300px) {
     &-item:not(:nth-child(99)) {
       &::after {
