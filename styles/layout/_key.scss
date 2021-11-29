@@ -30,10 +30,7 @@
     margin-top: -20rem;
     margin-bottom: 2.5rem;
   }
-  &-card-title {
-    @include textStyle(white, 3rem, 500);
-    line-height: 1;
-  }
+
   &-card-item {
     padding: 6rem 4rem;
     text-align: left;
@@ -56,29 +53,6 @@
   &-card-item:nth-child(3) {
     background-image: url("./images/img-card-03.png");
   }
-  &-card-desc {
-    @include textStyle(white);
-    margin-top: 1.5rem;
-  }
-  @include minWidth(1024px) {
-    &-card-list {
-      @include flexBox(center, center);
-      transform: translateY(8rem);
-    }
-    &-card-item {
-      padding: 6rem 4rem;
-      background-position: center;
-      background-size: cover;
-      border-radius: 1rem;
-      margin: 0 4rem;
-      @include size(33%, 50rem);
-      transition: all 0.25s linear;
-      &:hover {
-        transform: translateY(-1rem);
-      }
-      border-radius: 1rem;
-    }
-  }
   @include maxWidth(1023px) {
     &-stone-img {
       max-width: 26rem;
@@ -93,14 +67,6 @@
     }
     &-title {
       font-size: 3rem;
-    }
-    &-card-title {
-      font-size: 3rem;
-      padding-top: 5rem;
-    }
-    &-card-list {
-      margin-top: -28rem;
-      transform: translateY(28rem);
     }
   }
 }

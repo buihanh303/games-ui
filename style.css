@@ -720,12 +720,6 @@ button {
   margin-top: -20rem;
   margin-bottom: 2.5rem;
 }
-.key-card-title {
-  color: white;
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1;
-}
 .key-card-item {
   padding: 6rem 4rem;
   text-align: left;
@@ -748,36 +742,6 @@ button {
 .key-card-item:nth-child(3) {
   background-image: url("./images/img-card-03.png");
 }
-.key-card-desc {
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-top: 1.5rem;
-}
-@media screen and (min-width: 1024px) {
-  .key-card-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    transform: translateY(8rem);
-  }
-  .key-card-item {
-    padding: 6rem 4rem;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1rem;
-    margin: 0 4rem;
-    width: 33%;
-    height: 50rem;
-    transition: all 0.25s linear;
-    border-radius: 1rem;
-  }
-  .key-card-item:hover {
-    transform: translateY(-1rem);
-  }
-}
 @media screen and (max-width: 1023px) {
   .key-stone-img {
     max-width: 26rem;
@@ -792,14 +756,6 @@ button {
   }
   .key-title {
     font-size: 3rem;
-  }
-  .key-card-title {
-    font-size: 3rem;
-    padding-top: 5rem;
-  }
-  .key-card-list {
-    margin-top: -28rem;
-    transform: translateY(28rem);
   }
 }
 
