@@ -24,6 +24,9 @@
     color: white;
     text-transform: capitalize;
     font-size: 1.6rem;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-contact {
     @include flexBox(center);
@@ -104,7 +107,62 @@
   &-list.is-expand {
     transform: translateX(0);
   }
-
+  &-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 99;
+    color: white;
+  }
+  &-popup-item {
+    height: 100vh;
+    @include flexBox(center, center);
+  }
+  &-popup-content {
+    background-color: #1b1b1b;
+    border-radius: 1.6rem;
+    max-width: 460px;
+    height: 535px;
+    @include flexBox(center, center, column);
+    text-align: center;
+    padding: 2rem 4rem 3rem;
+    position: relative;
+  }
+  &-popup-title {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  &-popup-desc {
+    margin: 3rem 0;
+    line-height: 1.7;
+  }
+  &-popup-btn {
+    @include flexBox(center, center);
+    width: 176px;
+    height: 44px;
+    border-radius: 1rem;
+    background: linear-gradient(270deg, #ffac00, #ffd35b);
+    transition: all 0.3s linear;
+    a {
+      display: inline-block;
+      font-size: 1.6rem;
+      color: white;
+    }
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  &-close-popup {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   @include maxWidth(1023px) {
     padding-top: 2rem;
     padding-bottom: 7rem;
@@ -158,6 +216,9 @@
     }
     &-title {
       font-size: 5rem;
+    }
+    &-popup-content {
+      max-width: 90vw;
     }
   }
 }

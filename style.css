@@ -263,6 +263,9 @@ button {
   text-transform: capitalize;
   font-size: 1.6rem;
 }
+.header-item-link:hover {
+  cursor: pointer;
+}
 .header-contact {
   display: flex;
   align-items: center;
@@ -361,6 +364,74 @@ button {
 .header-list.is-expand {
   transform: translateX(0);
 }
+.header-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 99;
+  color: white;
+}
+.header-popup-item {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.header-popup-content {
+  background-color: #1b1b1b;
+  border-radius: 1.6rem;
+  max-width: 460px;
+  height: 535px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding: 2rem 4rem 3rem;
+  position: relative;
+}
+.header-popup-title {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.header-popup-desc {
+  margin: 3rem 0;
+  line-height: 1.7;
+}
+.header-popup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 176px;
+  height: 44px;
+  border-radius: 1rem;
+  background: linear-gradient(270deg, #ffac00, #ffd35b);
+  transition: all 0.3s linear;
+}
+.header-popup-btn a {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: white;
+}
+.header-popup-btn:hover {
+  transform: translateY(-5px);
+}
+.header-close-popup {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+.header-close-popup:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 1023px) {
   .header {
     padding-top: 2rem;
@@ -421,6 +492,9 @@ button {
   }
   .header-title {
     font-size: 5rem;
+  }
+  .header-popup-content {
+    max-width: 90vw;
   }
 }
 
