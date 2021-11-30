@@ -85,6 +85,12 @@ $(function () {
   $(".header-language-text").hover(function () {
     $(".language-list").css({ display: "flex" });
   });
+  $(".header-language-text").mouseleave(function () {
+    $(".language-list").css({ display: "none" });
+  });
+  $(".language-list").hover(function () {
+    $(".language-list").css({ display: "flex" });
+  });
   $(".language-list").mouseleave(function () {
     $(".language-list").css({ display: "none" });
   });
