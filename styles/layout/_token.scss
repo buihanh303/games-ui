@@ -1,5 +1,5 @@
 .token {
-  padding: 20rem 0 2rem;
+  padding: 10rem 0 2rem;
   background-color: #292f40;
   &-container {
     max-width: $container;
@@ -69,7 +69,7 @@
     }
   }
   @include maxWidth(1023px) {
-    padding: 35rem 0 2rem;
+    padding: 5rem 0 2rem;
     &-chart-left {
       display: none;
     }

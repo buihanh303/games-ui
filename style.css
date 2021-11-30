@@ -771,7 +771,7 @@ button {
   }
 }
 .token {
-  padding: 20rem 0 2rem;
+  padding: 10rem 0 2rem;
   background-color: #292f40;
 }
 .token-container {
@@ -857,7 +857,7 @@ button {
 }
 @media screen and (max-width: 1023px) {
   .token {
-    padding: 35rem 0 2rem;
+    padding: 5rem 0 2rem;
   }
   .token-chart-left {
     display: none;
@@ -984,6 +984,96 @@ button {
   .exc-item {
     background: #1f2330;
     border-radius: 20px;
+  }
+}
+
+.play {
+  background: url(./images/img-play-bg.png) no-repeat center/cover;
+  color: white;
+  padding: 5rem 0 10rem;
+}
+.play-title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.play-title::after {
+  content: "";
+  background: url(./images/img-play-bg-text.png) no-repeat left/cover;
+  left: 0;
+  bottom: 0;
+  width: 16rem;
+  height: 1.5rem;
+  position: absolute;
+}
+.play-left-desc {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 90%;
+}
+.play-left-desc strong {
+  font-weight: 800;
+}
+.play-left-desc:first-child {
+  margin-bottom: 1.6rem;
+}
+.play-img {
+  max-width: 90%;
+  margin-top: 11rem;
+}
+.play-item-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.play-item-img {
+  width: 6rem;
+  height: 6rem;
+  flex-shrink: 1;
+  margin-right: 2.5rem;
+}
+.play-item-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.play-item-desc {
+  color: #b1aebf;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+  .play-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .play-item {
+    width: 50%;
+  }
+  .play-item:nth-child(2) {
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .play-left-desc {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .play-item:nth-child(2) {
+    margin-top: 5rem;
+  }
+  .play-img {
+    margin-top: 5rem;
   }
 }
 
