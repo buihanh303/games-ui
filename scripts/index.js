@@ -45,3 +45,47 @@ btnPlayNow.addEventListener("click", () => {
 btnClosePopup.addEventListener("click", () => {
   popupContent.style.display = "none";
 });
+
+const arrLang = {
+  en: {
+    play: "play now",
+    market: "marketplace",
+    mint: "mint",
+    farm: "farm",
+    mining: "mining",
+    learn: "learn more",
+  },
+  id: {
+    play: "main sekarang",
+    market: "pasar",
+    mint: "daun mint",
+    farm: "tanah pertanian",
+    mining: "pertambangan",
+    learn: "mempelajari",
+  },
+};
+
+$(function () {
+  let userLang = navigator.language || navigator.userLanguage;
+  let fomatLangBrower = userLang.split("-")[0];
+
+  if (fomatLangBrower !== "") {
+    $(".header-item-link").each(function (index, item) {
+      $(this).text(arrLang[fomatLangBrower][$(this).attr("key")]);
+    });
+  }
+  $(".translate").click(function () {
+    let lang = $(this).attr("id");
+    $(".language-list").css({ display: "none" });
+
+    $(".header-item-link").each(function (index, item) {
+      $(this).text(arrLang[lang][$(this).attr("key")]);
+    });
+  });
+  $(".header-language-text").hover(function () {
+    $(".language-list").css({ display: "flex" });
+  });
+  $(".language-list").mouseleave(function () {
+    $(".language-list").css({ display: "none" });
+  });
+});
