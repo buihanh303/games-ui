@@ -229,13 +229,15 @@ button {
 
 .header {
   background-color: white;
-  padding-top: 4rem;
   padding-bottom: 18rem;
   position: relative;
 }
 .header-content {
   position: relative;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 5rem);
 }
 .header-video {
   position: absolute;
@@ -336,7 +338,7 @@ button {
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 29.5rem;
+  margin-top: auto;
 }
 .header-btn {
   padding: 0 2rem;
@@ -475,9 +477,36 @@ button {
   transform: translateY(-50%) rotate(180deg);
   transition: all 0.5s ease;
 }
-@media screen and (max-width: 1439px) {
+@media screen and (min-width: 1024px) {
   .header {
-    height: 56.25vw;
+    padding-bottom: 0;
+  }
+  .header-content {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  .header-video {
+    position: unset;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header {
+    padding-bottom: 0;
+  }
+  .header-content {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 20rem;
+    width: 1230px;
+  }
+  .header-video {
+    position: unset;
   }
 }
 @media screen and (max-width: 1023px) {

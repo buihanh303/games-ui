@@ -1,6 +1,5 @@
 .header {
   background-color: white;
-  padding-top: 4rem;
   // background: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80")
   //   no-repeat center / cover;
   padding-bottom: 18rem;
@@ -8,6 +7,9 @@
   &-content {
     position: relative;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 5rem);
   }
   &-video {
     position: absolute;
@@ -83,7 +85,7 @@
   }
   &-bottom {
     @include flexBox(center, center);
-    margin-top: 29.5rem;
+    margin-top: auto;
   }
   &-btn {
     padding: 0 2rem;
@@ -221,9 +223,36 @@
     // }
   }
 
-  @include maxWidth(1439px) {
-    height: 56.25vw;
+  @include minWidth(1024px) {
+    padding-bottom: 0;
+    &-content {
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-bottom: 5rem;
+      width: 100%;
+    }
+    &-video {
+      position: unset;
+    }
   }
+
+  @include minWidth(1400px) {
+    padding-bottom: 0;
+    &-content {
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-bottom: 20rem;
+      width: $container;
+    }
+    &-video {
+      position: unset;
+    }
+  }
+
   @include maxWidth(1023px) {
     padding-top: 2rem;
     padding-bottom: 7rem;
