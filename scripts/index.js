@@ -46,6 +46,8 @@ btnClosePopup.addEventListener("click", () => {
   popupContent.style.display = "none";
 });
 
+
+// language
 const arrLang = {
   en: {
     play: "play now",
