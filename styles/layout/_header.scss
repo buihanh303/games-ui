@@ -165,11 +165,23 @@
   }
   &-language {
     position: relative;
+    margin-left: 4rem;
+    &:hover {
+      cursor: pointer;
+    }
   }
+
+  &-language:hover .language-list {
+    opacity: 1;
+    visibility: visible;
+  }
+  &-language:hover .header-language-text::after {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
   &-language-text {
     color: white;
     font-size: 1.6rem;
-    margin-left: 4rem;
     font-weight: 500;
     position: relative;
     padding-right: 2.4rem;
@@ -184,17 +196,17 @@
       transform: translateY(-50%) rotate(180deg);
       transition: all 0.5s ease;
     }
-    &:hover {
-      cursor: pointer;
-    }
-    &:hover + .language-list {
-      // opacity: 1;
-      // visibility: visible;
-      display: flex;
-    }
-    &:hover::after {
-      transform: translateY(-50%) rotate(0deg);
-    }
+    // &:hover {
+    //   cursor: pointer;
+    // }
+    // &:hover + .language-list {
+    //   // opacity: 1;
+    //   // visibility: visible;
+    //   display: flex;
+    // }
+    // &:hover::after {
+    //   transform: translateY(-50%) rotate(0deg);
+    // }
   }
 
   @include maxWidth(1023px) {
@@ -256,7 +268,7 @@
     }
   }
   @include maxWidth(424px) {
-    &-language-text {
+    &-language {
       margin-left: 2rem;
     }
     &-logo {
@@ -275,21 +287,21 @@
     padding: 2rem;
     border-radius: 1rem;
     @include flexBox(stretch, flex-start, row, wrap);
-    // opacity: 0;
-    // visibility: hidden;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    // display: none;
     transition: all 0.5s linear;
-    transform: translateX(-10%);
-    &:hover {
-      // opacity: 1;
-      // visibility: visible;
-      display: flex;
-    }
+    transform: translateX(-40%);
+    // &:hover {
+    //   // opacity: 1;
+    //   // visibility: visible;
+    //   // display: flex;
+    // }
   }
-  &-list.is-hover {
-    opacity: 1;
-    visibility: visible;
-  }
+  // &-list.is-hover {
+  //   opacity: 0;
+  //   visibility: hidden;
+  // }
   &-list::before {
     content: "";
     position: absolute;
@@ -311,7 +323,7 @@
   }
   @include maxWidth(1200px) {
     &-list {
-      transform: translateX(-37%);
+      transform: translateX(-60%);
     }
   }
   @include maxWidth(1023px) {

@@ -434,11 +434,21 @@ button {
 }
 .header-language {
   position: relative;
+  margin-left: 4rem;
+}
+.header-language:hover {
+  cursor: pointer;
+}
+.header-language:hover .language-list {
+  opacity: 1;
+  visibility: visible;
+}
+.header-language:hover .header-language-text::after {
+  transform: translateY(-50%) rotate(0deg);
 }
 .header-language-text {
   color: white;
   font-size: 1.6rem;
-  margin-left: 4rem;
   font-weight: 500;
   position: relative;
   padding-right: 2.4rem;
@@ -453,15 +463,6 @@ button {
   top: 50%;
   transform: translateY(-50%) rotate(180deg);
   transition: all 0.5s ease;
-}
-.header-language-text:hover {
-  cursor: pointer;
-}
-.header-language-text:hover + .language-list {
-  display: flex;
-}
-.header-language-text:hover::after {
-  transform: translateY(-50%) rotate(0deg);
 }
 @media screen and (max-width: 1023px) {
   .header {
@@ -529,7 +530,7 @@ button {
   }
 }
 @media screen and (max-width: 424px) {
-  .header-language-text {
+  .header-language {
     margin-left: 2rem;
   }
   .header-logo {
@@ -551,16 +552,10 @@ button {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.5s linear;
-  transform: translateX(-10%);
-}
-.language-list:hover {
-  display: flex;
-}
-.language-list.is-hover {
-  opacity: 1;
-  visibility: visible;
+  transform: translateX(-40%);
 }
 .language-list::before {
   content: "";
@@ -583,7 +578,7 @@ button {
 }
 @media screen and (max-width: 1200px) {
   .language-list {
-    transform: translateX(-37%);
+    transform: translateX(-60%);
   }
 }
 @media screen and (max-width: 1023px) {

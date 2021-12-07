@@ -53,6 +53,7 @@ const arrLang = {
     mint: "mint",
     farm: "farm",
     mining: "mining",
+    map: "RoadMap",
     learn: "learn more",
   },
   id: {
@@ -61,6 +62,7 @@ const arrLang = {
     mint: "daun mint",
     farm: "tanah pertanian",
     mining: "pertambangan",
+    map: "RoadMap",
     learn: "mempelajari",
   },
 };
@@ -76,22 +78,22 @@ $(function () {
   }
   $(".translate").click(function () {
     let lang = $(this).attr("id");
-    $(".language-list").css({ display: "none" });
+    // $(".language-list").addClass("is-hover");
 
     $(".header-item-link").each(function (index, item) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
   });
-  $(".header-language-text").hover(function () {
-    $(".language-list").css({ display: "flex" });
-  });
-  $(".header-language-text").mouseleave(function () {
-    $(".language-list").css({ display: "none" });
-  });
-  $(".language-list").hover(function () {
-    $(".language-list").css({ display: "flex" });
-  });
-  $(".language-list").mouseleave(function () {
-    $(".language-list").css({ display: "none" });
-  });
+  // $(".header-language").hover(function () {
+  //   $(".language-list").removeClass("is-hover");
+  // });
+  // $(".header-language").mouseleave(function () {
+  //   $(".language-list").addClass("is-hover");
+  // });
+  // $(".language-list").hover(function () {
+  //   $(".language-list").css({ display: "flex" });
+  // });
+  // $(".language-list").mouseleave(function () {
+  //   $(".language-list").css({ display: "none" });
+  // });
 });
