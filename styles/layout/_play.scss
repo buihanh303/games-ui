@@ -35,6 +35,9 @@
   &-item-content {
     @include flexBox();
   }
+  &-item-content:not(:last-child) {
+    margin-bottom: 3rem;
+  }
   &-item-img {
     @include size(6rem);
     flex-shrink: 1;

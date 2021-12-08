@@ -31,6 +31,14 @@
   &-list {
     @include flexBox(center);
   }
+  &-item {
+    @include flexBox(center);
+    cursor: pointer;
+    img {
+      width: 3.5rem;
+      margin-left: 2px;
+    }
+  }
   &-item:not(:first-child) {
     margin-left: 1.5rem;
   }

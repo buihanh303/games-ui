@@ -39,8 +39,11 @@
   &-video {
     width: 70%;
     height: 40rem;
-    background-color: red;
+    // background-color: red;
     flex: 1;
+  }
+  &-video-animal {
+    width: 100%;
   }
   &-list {
     @include flexBox(center, center);

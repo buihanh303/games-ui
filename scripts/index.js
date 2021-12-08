@@ -50,13 +50,7 @@ btnClosePopup.addEventListener("click", () => {
 // language
 const arrLang = {
   en: {
-    // play: "play now",
-    // market: "marketplace",
-    // mint: "mint",
-    // farm: "farm",
-    // mining: "mining",
-    // map: "RoadMap",
-    // learn: "learn more",
+    s0_0: "English",
     s1_1: "PARAVERSE NFT PLAY TO EARN GAME",
     s1_2: "After entering Paraverse, players can earn tokens through games and contributions to the ecosystem. Players can collect, train and trade Para monster, at the same time direct them to do adventure and battle to improve player's own game skills and strive to become the most dazzling Para monster trainer on the Paraverse.",
     s2_1: "EXPLORE THE PARAVERSE WORLD",
@@ -78,6 +72,7 @@ const arrLang = {
     s6_6: "Bring a different experience and gameplay to Paraverse Metaverse through AR and VR technology! Take your Para monster to explore and fight in the real world!",
   },
   ja: {
+    s0_0: "日本語",
     s1_1: "PARAVERSE NFT ゲームを稼ぐためにプレイ",
     s1_2: "Paraverseに入った後、プレイヤーはゲームやエコシステムへの貢献を通じてトークンを獲得できます。 プレイヤーはParaモンスターを集め、訓練し、交換すると同時に、冒険と戦いをしてプレイヤー自身のゲームスキルを向上させ、Paraverseで最も魅力的なParaモンスタートレーナーになるように努力することができます。",
     s2_1: "PARAVERSEの世界を探検する",
@@ -99,6 +94,7 @@ const arrLang = {
     s6_6: "ARおよびVRテクノロジーを通じて、Paraverse Metaverseに異なる体験とゲームプレイをもたらします！ Paraモンスターを連れて、現実の世界を探索して戦いましょう！",
   },
   ko: {
+    s0_0: "한국어",
     s1_1: "게임에서 벌어들이기 위한 PARAVERSE NFT 플레이",
     s1_2: "플레이어는 Paraverse로 들어간 후 게임을 통해 토큰을 획득하고 생태계에 기여할 수 있습니다. 플레이어는  Para 몬스터를 수집, 훈련, 거래할 수 있으며 동시에 모험과 배틀을 지휘하여 자신의 게임 능력을 향상시키고, Paraverse에서 가장 눈부신 Para 몬스터 트레이너가 되도록 노력할 수 있습니다.",
     s2_1: "PARAVERSE 세계를 탐험하세요",
@@ -120,6 +116,7 @@ const arrLang = {
     s6_6: "AR과 VR 기술을 통해 Paraverse Metaverse에 색다른 경험과 게임플레이를 접목해보세요! Para 몬스터를 데리고 현실 세계를 탐험하고 싸우세요!",
   },
   pt: {
+    s0_0: "Português",
     s1_1: "JOGO QUE PAGA PARAVERSE NFT",
     s1_2: "Depois de entrarem no Paraverse, os jogadores podem ganhar tokens através de jogos e contribuições para o ecossistema. Os jogadores podem colecionar, treinar e trocar monstros Para, ao mesmo tempo que os guiam em aventuras e batalhas para melhorar as capacidades de jogo do próprio jogador e esforçar-se para se tornar o mais deslumbrante treinador de monstros Para no Paraverse.",
     s2_1: "EXPLORE O MUNDO PARAVERSE",
@@ -141,6 +138,7 @@ const arrLang = {
     s6_6: "Traga uma experiência e jogabilidade diferente ao Paraverse Metaverse através da tecnologia AR e VR! Leve o seu monstro Para a explorar e lutar no mundo real!",
   },
   es: {
+    s0_0: "Español",
     s1_1: "PARAVERSE NFT JUEGA PARA GANAR",
     s1_2: "Después de ingresar a Paraverse,, los jugadores pueden ganar tokens a través de juegos y contribuciones al ecosistema. Los jugadores podrán recolectar, entrenar e intercambiar monstruos Para, al mismo tiempo que los dirigen a hacer aventuras y batallas para mejorar las habilidades de juego del jugador y esforzarse por convertirse en el entrenador de monstruos Para más deslumbrante de Paraverse.",
     s2_1: "EXPLORA EL MUNDO PARAVERSE",
@@ -162,6 +160,7 @@ const arrLang = {
     s6_6: "¡Trae una experiencia y jugabilidad diferentes a Paraverse Metaverse a través de la tecnología AR y VR!  ¡Lleva a tu monstruo Para a explorar y luchar en el mundo real!",
   },
   vi: {
+    s0_0: "Tiếng Việt",
     s1_1: "PARAVERSE NFT PLAY TO EARN GAME",
     s1_2: "After entering Paraverse, players can earn tokens through games and contributions to the ecosystem. Players can collect, train and trade Para monster, at the same time direct them to do adventure and battle to improve player's own game skills and strive to become the most dazzling Para monster trainer on the Paraverse.",
     s2_1: "EXPLORE THE PARAVERSE WORLD",
@@ -184,6 +183,7 @@ const arrLang = {
     s6_6: "Bring a different experience and gameplay to Paraverse Metaverse through AR and VR technology! Take your Para monster to explore and fight in the real world!",
   },
   id: {
+    s0_0: "Indonesia",
     s1_1: "PARAVERSE NFT MAIN UNTUK MENDAPATKAN PERMAINAN",
     s1_2: "Sesudah memasuki Paraverse, pemain bisa memperoleh token lewat permainan dan kontribusi ke ekosistem. Pemain bisa mengumpulkan, latihan, dan bertukar Para monster, di saat bersamaan memimpin mereka berpetualang dan bertempur untuk meningkatkan keterampilan permainan pemain sendiri dan berjuang untuk menjadi pelatih Para monster yang paling mempesona di Paraverse.",
     s2_1: "JELAJAHI DUNIA PARAVERSE",
@@ -205,6 +205,7 @@ const arrLang = {
     s6_6: "Bawa pengalaman dan permainan yang berbeda ke Paraverse Metaverse lewat teknologi AR dan VR! Pimpin Para monstermu untuk menjelajah dan bertarung di dunia nyata!",
   },
   tr: {
+    s0_0: "Türkçe",
     s1_1: "PARAVERSE NFT KAZANMAK İÇİN OYNA",
     s1_2: "Paraverse'e girdikten sonra, oyuncular oyunlar ve ekosisteme olan katkıları sayesinde tokenler kazanabilirler. Oyuncular Para canavarlarını toplayabilir, eğitebilir ve takas edebilir, aynı zamanda onları oyuncunun kendi oyun becerilerini geliştirmek için onları maceralara ve savaşmaya yönlendirebilir ve Paraverse'deki en göz kamaştırıcı Para canavarı eğitmeni olmaya çabalayabilirler.",
     s2_1: "PARAVERSE DÜNYASINI KEŞFET",
@@ -226,6 +227,7 @@ const arrLang = {
     s6_6: "AR ve VR teknolojisiyle Paraverse Metaverse'e farklı bir deneyim ve oynanış kazandır! Gerçek dünyada keşfetmek ve savaşmak için Para canavarınızı alın!",
   },
   de: {
+    s0_0: "Deutsch",
     s1_1: "PARAVERSE NFT PLAY TO EARN GAME",
     s1_2: "After entering Paraverse, players can earn tokens through games and contributions to the ecosystem. Players can collect, train and trade Para monster, at the same time direct them to do adventure and battle to improve player's own game skills and strive to become the most dazzling Para monster trainer on the Paraverse.",
     s2_1: "EXPLORE THE PARAVERSE WORLD",
