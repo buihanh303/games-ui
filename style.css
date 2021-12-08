@@ -278,6 +278,7 @@ button {
     text-transform: uppercase;
     font-size: 7rem;
     margin: 2.9rem 0;
+    font-weight: 700;
     line-height: 1.2; }
   .header-center-list {
     display: flex;
