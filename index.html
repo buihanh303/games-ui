@@ -1,539 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Games</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-content container">
-          <div class="header-top">
-            <a href="#" class="header-logo">
-              <h1 class="header-home">starmon metaverse</h1>
-            </a>
-            <div class="header-links">
-              <ul class="header-list">
-                <i class="fas fa-times header-close-icon"></i>
-                <li class="header-item" id="btn-play-now">
-                  <span class="header-item-link lang" key="play">play now</span>
-                </li>
-                <li class="header-item">
-                  <a href="#" class="header-item-link lang" key="market"
-                    >marketplace</a
-                  >
-                </li>
-                <li class="header-item">
-                  <a href="#" class="header-item-link lang" key="mint">mint</a>
-                </li>
-                <li class="header-item">
-                  <a href="#" class="header-item-link lang" key="farm">farm</a>
-                </li>
-                <li class="header-item">
-                  <a href="#" class="header-item-link lang" key="mining"
-                    >mining</a
-                  >
-                </li>
-                <li class="header-item">
-                  <a href="#" class="header-item-link lang" key="map"
-                    >RoadMap</a
-                  >
-                </li>
-                <li class="header-item">
-                  <a href="#" class="header-item-link lang" key="learn"
-                    >learn more</a
-                  >
-                </li>
-              </ul>
-              <ul class="header-contact">
-                <li class="header-contact-item">
-                  <a href="#" class="header-contact-link">
-                    <img
-                      src="./images/img-medium.svg"
-                      alt="medium"
-                      class="header-contact-img"
-                    />
-                  </a>
-                </li>
-                <li class="header-contact-item">
-                  <a href="#" class="header-contact-link">
-                    <img
-                      src="./images/img-telegram.svg"
-                      alt="telegram"
-                      class="header-contact-img"
-                    />
-                  </a>
-                </li>
-                <li class="header-contact-item">
-                  <a href="#" class="header-contact-link">
-                    <img
-                      src="./images/img-twitter.svg"
-                      alt="twitter"
-                      class="header-contact-img"
-                    />
-                  </a>
-                </li>
-                <li class="header-contact-item">
-                  <a href="#" class="header-contact-link">
-                    <img
-                      src="./images/img-discord.svg"
-                      alt="discord"
-                      class="header-contact-img"
-                    />
-                  </a>
-                </li>
-              </ul>
-              <div class="header-language" onclick="">
-                <span class="header-language-text">English</span>
-                <ul class="language-list">
-                  <li class="language-item translate" id="en">English</li>
-                  <li class="language-item">日本語</li>
-                  <li class="language-item">한국어</li>
-                  <li class="language-item">Português</li>
-                  <li class="language-item">Español</li>
-                  <li class="language-item translate" id="vn">Tiếng Việt</li>
-                  <li class="language-item translate" id="id">Indonesia</li>
-                  <li class="language-item">Türkçe</li>
-                  <li class="language-item">Deutsch</li>
-                  <li class="language-item">English</li>
-                  <li class="language-item">English</li>
-                </ul>
-              </div>
-            </div>
-            <div class="header-bar">
-              <img src="./images/img-bar.png" alt="bar" />
-            </div>
-          </div>
-          <div class="header-center">
-            <h3 class="header-caption">starmon nft</h3>
-            <h2 class="header-title">starmon metaverse</h2>
-            <ul class="header-center-list">
-              <li class="header-center-item">
-                <img
-                  src="./images/img-battle.png"
-                  alt="battle"
-                  class="header-center-img"
-                />
-                <span class="header-center-desc">battle</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Games</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-content container">
+        <div class="header-top">
+          <a href="#" class="header-logo">
+            <h1 class="header-home">paraverse metaverse</h1>
+          </a>
+          <div class="header-links">
+            <ul class="header-list">
+              <i class="fas fa-times header-close-icon"></i>
+              <li class="header-item" id="btn-play-now">
+                <span class="header-item-link lang" key="play">play now</span>
               </li>
-              <li class="header-center-item">
-                <img
-                  src="./images/img-collect.png"
-                  alt="collect"
-                  class="header-center-img"
-                />
-                <span class="header-center-desc">collect</span>
+              <li class="header-item">
+                <a href="#" class="header-item-link lang" key="market">marketplace</a>
               </li>
-              <li class="header-center-item">
-                <img
-                  src="./images/img-earn.png"
-                  alt="earn"
-                  class="header-center-img"
-                />
-                <span class="header-center-desc">earn</span>
+              <li class="header-item">
+                <a href="#" class="header-item-link lang" key="mint">mint</a>
+              </li>
+              <li class="header-item">
+                <a href="#" class="header-item-link lang" key="farm">farm</a>
+              </li>
+              <li class="header-item">
+                <a href="#" class="header-item-link lang" key="mining">mining</a>
+              </li>
+              <li class="header-item">
+                <a href="#" class="header-item-link lang" key="map">RoadMap</a>
+              </li>
+              <li class="header-item">
+                <a href="#" class="header-item-link lang" key="learn">learn more</a>
               </li>
             </ul>
-          </div>
-          <div class="header-bottom">
-            <button class="header-btn header-play">play to earn</button>
-            <button class="header-btn header-buy">buy $smon</button>
-          </div>
-        </div>
-        <video class="header-video" width="100%" height="auto" playsinline autoplay="autoplay" loop="loop" muted="muted">
-          <source src="./video/video-header.mp4">
-        </video>
-        <div class="header-popup">
-          <div class="header-popup-item">
-            <div class="header-popup-content">
-              <i class="fas fa-times header-close-popup"></i>
-              <h3 class="header-popup-title">welcome to play</h3>
-              <p class="header-popup-desc">
-                Download and install, enter the game, and register at the login
-                interface
-              </p>
-              <button class="header-popup-btn"><a href="#">Download</a></button>
+            <ul class="header-contact">
+              <li class="header-contact-item">
+                <a href="#" class="header-contact-link">
+                  <img src="./images/img-medium.svg" alt="medium" class="header-contact-img" />
+                </a>
+              </li>
+              <li class="header-contact-item">
+                <a href="#" class="header-contact-link">
+                  <img src="./images/img-telegram.svg" alt="telegram" class="header-contact-img" />
+                </a>
+              </li>
+              <li class="header-contact-item">
+                <a href="#" class="header-contact-link">
+                  <img src="./images/img-twitter.svg" alt="twitter" class="header-contact-img" />
+                </a>
+              </li>
+              <li class="header-contact-item">
+                <a href="#" class="header-contact-link">
+                  <img src="./images/img-discord.svg" alt="discord" class="header-contact-img" />
+                </a>
+              </li>
+            </ul>
+            <div class="header-language" onclick="">
+              <span class="header-language-text">English</span>
+              <ul class="language-list">
+                <li class="language-item translate" id="en">English</li>
+                <li class="language-item translate" id="ja">日本語</li>
+                <li class="language-item translate" id="ko">한국어</li>
+                <li class="language-item translate" id="pt">Português</li>
+                <li class="language-item translate" id="es">Español</li>
+                <li class="language-item translate" id="vi">Tiếng Việt</li>
+                <li class="language-item translate" id="id">Indonesia</li>
+                <li class="language-item translate" id="tr">Türkçe</li>
+                <li class="language-item translate" id="de">Deutsch</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </header>
-      <section class="video">
-        <div class="video-container">
-          <div class="video-left">
-            <img
-              src="./images/img-video.png"
-              alt="video-image"
-              class="video-img"
-            />
+          <div class="header-bar">
+            <img src="./images/img-bar.png" alt="bar" />
           </div>
-          <div class="video-right">
-            <h3 class="video-title">3D NFT PLAY TO EARN GAME</h3>
-            <p class="video-desc">
-              After entering the Andres Land, players can earn tokens through
-              games and contributions to the ecosystem. Players can collect,
-              train and trade Starmons, at the same time direct them to do
-              adventure and battle to improve player's own game skills and
-              strive to become the most dazzling Starmons trainer on the Andres
-              Land.
+        </div>
+        <div class="header-center">
+          <h3 class="header-caption">paraverse nft</h3>
+          <h2 class="header-title">paraverse metaverse</h2>
+          <ul class="header-center-list">
+            <li class="header-center-item">
+              <img src="./images/img-battle.png" alt="battle" class="header-center-img" />
+              <span class="header-center-desc">battle</span>
+            </li>
+            <li class="header-center-item">
+              <img src="./images/img-collect.png" alt="collect" class="header-center-img" />
+              <span class="header-center-desc">collect</span>
+            </li>
+            <li class="header-center-item">
+              <img src="./images/img-earn.png" alt="earn" class="header-center-img" />
+              <span class="header-center-desc">earn</span>
+            </li>
+          </ul>
+        </div>
+        <div class="header-bottom">
+          <button class="header-btn header-play">play to earn</button>
+          <button class="header-btn header-buy">buy $smon</button>
+        </div>
+      </div>
+      <video class="header-video" width="100%" height="auto" playsinline autoplay="autoplay" loop="loop" muted="muted">
+        <source src="./video/video-header.mp4">
+      </video>
+      <div class="header-popup">
+        <div class="header-popup-item">
+          <div class="header-popup-content">
+            <i class="fas fa-times header-close-popup"></i>
+            <h3 class="header-popup-title">welcome to play</h3>
+            <p class="header-popup-desc">
+              Download and install, enter the game, and register at the login
+              interface
             </p>
+            <button class="header-popup-btn"><a href="#">Download</a></button>
           </div>
-          <img
-            src="./images/img-animal-01.png"
-            alt="animal"
-            class="video-animal-img"
-          />
         </div>
-      </section>
-      <section class="exp">
-        <div class="exp-container">
-          <h3 class="exp-title">EXPLORE THE MULTIVERSE OF STAR MONSTER</h3>
-          <p class="exp-desc">
-            Star monsters are super-powered creatures that live on Andres Land.
-            Humans will be their friends and use their power to battle and
-            explore the post-explosion Andres Land. Each StarMon has a unique
-            superpower, unique appearance and rarity. There are also super rare
-            Star monsters waiting for you to discover.
+      </div>
+    </header>
+    <section class="video">
+      <div class="video-container">
+        <div class="video-left">
+          <img src="./images/img-video.png" alt="video-image" class="video-img" />
+        </div>
+        <div class="video-right">
+          <h3 class="video-title text-translate" key="s1_1">PARAVERSE NFT PLAY TO EARN GAME</h3>
+          <p class="video-desc text-translate" key="s1_2">
+            After entering Paraverse, players can earn tokens through games and contributions to the ecosystem. Players
+            can collect, train and trade Para monster, at the same time direct them to do adventure and battle to
+            improve player's own game skills and strive to become the most dazzling Para monster trainer on the
+            Paraverse.
           </p>
-          <div class="exp-tab">
-            <ul class="exp-tab-content">
-              <li class="exp-tab-item is-active" data-tab="1">
-                <div class="exp-video">
-                  <img src="./images/img-exp-content-01.png" alt="animal" />
-                </div>
+        </div>
+        <img src="./images/img-exp-item-03.png" alt="animal" class="video-animal-img" />
+      </div>
+    </section>
+    <section class="exp">
+      <div class="exp-container">
+        <h3 class="exp-title text-translate" key="s2_1">EXPLORE THE PARAVERSE WORLD</h3>
+        <p class="exp-desc text-translate" key="s2_2">
+          Para monsters are super-powered creatures that live on Paraverse World. Each Para monster has a unique
+          superpower, unique appearance and rarity. There are also super rare Para monsters waiting for you to discover.
+        </p>
+        <div class="exp-tab">
+          <ul class="exp-tab-content">
+            <li class="exp-tab-item is-active" data-tab="1">
+              <div class="exp-video">
                 <img src="./images/img-exp-content-01.png" alt="animal" />
-              </li>
-              <li class="exp-tab-item" data-tab="2">
-                <div class="exp-video">
-                  <h3>Video</h3>
-                </div>
-                <img src="./images/img-exp-content-02.png" alt="animal" />
-              </li>
-              <li class="exp-tab-item" data-tab="3">
-                <div class="exp-video">
-                  <h3>Video</h3>
-                </div>
-                <img src="./images/img-exp-content-03.png" alt="animal" />
-              </li>
-            </ul>
-            <ul class="exp-list">
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-01.png"
-                  class="btn-tab exp-item-img"
-                  id="1"
-                  alt="animal"
-                />
-              </li>
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-02.png"
-                  class="btn-tab exp-item-img"
-                  id="2"
-                  alt="animal"
-                />
-              </li>
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-03.png"
-                  class="btn-tab exp-item-img"
-                  id="3"
-                  alt="animal"
-                />
-              </li>
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-03.png"
-                  class="btn-tab exp-item-img"
-                  id="3"
-                  alt="animal"
-                />
-              </li>
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-03.png"
-                  class="btn-tab exp-item-img"
-                  id="3"
-                  alt="animal"
-                />
-              </li>
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-03.png"
-                  class="btn-tab exp-item-img"
-                  id="3"
-                  alt="animal"
-                />
-              </li>
-              <li class="exp-item">
-                <img
-                  src="./images/img-exp-item-03.png"
-                  class="btn-tab exp-item-img"
-                  id="3"
-                  alt="animal"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="key">
-        <div class="key-container">
-          <h3 class="key-title">PLAY TO EARN REVOLUTION</h3>
-          <p class="key-desc">
-            StarMon is a new type of game, partially owned and operated by its
-            players.Earn SMON tokens by playing and use them to decide the
-            future of the game!
-          </p>
-          <img src="./images/img-stone.png" alt="stone" class="key-stone-img" />
-          <img src="./images/img-plate.png" alt="plate" class="key-plate-img" />
-          <img
-            src="./images/img-animal-02.png"
-            alt="animal"
-            class="key-animal-img"
-          />
-        </div>
-      </section>
-      <section class="play">
-        <div class="play-container container">
-          <h3 class="play-title">GAMEPLAY</h3>
-          <div class="play-content">
-            <div class="play-item">
-              <p class="play-left-desc">
-                <strong>Kaby Arena</strong> is a tactical multiplayer role
-                playing game which combines Free-to-Play and Play-to-Earn to
-                provide an open economy for every player.
-              </p>
-              <p class="play-left-desc">
-                Collect, evolve, and trade unique NFT heroes to build the best
-                adventure team. Rise through the ranks to claim tournament
-                rewards!
-              </p>
-              <img src="./images/img-play.png" alt="play" class="play-img" />
-            </div>
-            <div class="play-item">
-              <div class="play-item-content">
-                <img
-                  src="./images/img-play-icon-01.png"
-                  alt="play-free"
-                  class="play-item-img"
-                />
-                <div class="play-item-right">
-                  <h3 class="play-item-title">Free to play</h3>
-                  <p class="play-item-desc">
-                    Players start with basic non-NFT heroes. By playing, they
-                    can collect materials, armors and loot-boxes.
-                  </p>
-                  <p class="play-item-desc">
-                    Free heroes & armors can be minted into NFT using Kaby
-                    Token.
-                  </p>
-                </div>
               </div>
-              <div class="play-item-content">
-                <img
-                  src="./images/img-play-icon-02.png"
-                  alt="play-free"
-                  class="play-item-img"
-                />
-                <div class="play-item-right">
-                  <h3 class="play-item-title">Play-to-earn</h3>
-                  <p class="play-item-desc">
-                    Gaming is not only for fun, it can earn you money:
-                    Play-to-earn with dynamic farming system and active market,
-                    every heroes/items can be minted into NFT.
-                  </p>
-                </div>
-              </div>
-              <div class="play-item-content">
-                <img
-                  src="./images/img-play-icon-03.png"
-                  alt="play-free"
-                  class="play-item-img"
-                />
-                <div class="play-item-right">
-                  <h3 class="play-item-title">Crypto war</h3>
-                  <p class="play-item-desc">
-                    Gameplay involves the crypto market - predict the market
-                    fluctuations correctly to earn in-game advantages.
-                  </p>
-                </div>
-              </div>
-              <div class="play-item-content">
-                <img
-                  src="./images/img-play-icon-04.png"
-                  alt="play-free"
-                  class="play-item-img"
-                />
-                <div class="play-item-right">
-                  <h3 class="play-item-title">Assets for rent</h3>
-                  <p class="play-item-desc">
-                    Solve blockchain & NFT games problem: enable users to put
-                    their assets for rent with high credibility.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="token">
-        <div class="token-container">
-          <h2 class="token-title">TOKEN ALLOCATION</h2>
-          <div class="token-chart">
-            <div class="token-chart-left">
-              <img
-                src="./images/img-animal-01.png"
-                alt="animal"
-                class="token-chart-img"
-              />
-              <img
-                src="./images/img-animal-02.png"
-                alt="animal"
-                class="token-chart-img"
-              />
-              <img
-                src="./images/img-animal-03.png"
-                alt="animal"
-                class="token-chart-img"
-              />
-              <img
-                src="./images/img-animal-04.png"
-                alt="animal"
-                class="token-chart-img"
-              />
-            </div>
-            <div class="token-chart-right">
-              <img src="./images/img-chart.png" alt="chart" />
-              <div class="token-chart-buy">
-                <span class="token-total"> Total Supply: 100,000,000</span>
-                <button class="token-btn">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="exc">
-        <div class="exc-container">
-          <h2 class="exc-title">EXCITING FUTURE</h2>
-          <p class="exc-desc">
-            Our vision is to create a charming collection and metaverse
-            ecosystem.
-          </p>
-          <ul class="exc-list">
-            <li class="exc-item">
-              <h3 class="exc-item-title">Starmon Land</h3>
-              <p class="exc-item-desc">
-                The Andres is composed of a quantity of lands which will be
-                presented in the form of NFT. Here anyone can buy and own
-                virtual StarMon Land, collect and forge props, and make new
-                friends.
-              </p>
+              <img src="./images/img-exp-content-01.png" alt="animal" />
             </li>
-            <li class="exc-item">
-              <h3 class="exc-item-title">Starmon Avatar NFTs</h3>
-              <p class="exc-item-desc">
-                Create your own unique digital world avatar in StarMon
-                Metaverse.
-              </p>
+            <li class="exp-tab-item" data-tab="2">
+              <div class="exp-video">
+                <h3>Video</h3>
+              </div>
+              <img src="./images/img-exp-content-02.png" alt="animal" />
             </li>
-            <li class="exc-item">
-              <h3 class="exc-item-title">Starmon Go</h3>
-              <p class="exc-item-desc">
-                Bring a different experience and gameplay to Starmon Metaverse
-                through AR and LBS technology! Take your Starmon to explore and
-                fight in the real world!
-              </p>
+            <li class="exp-tab-item" data-tab="3">
+              <div class="exp-video">
+                <h3>Video</h3>
+              </div>
+              <img src="./images/img-exp-content-03.png" alt="animal" />
+            </li>
+            <li class="exp-tab-item" data-tab="4">
+              <div class="exp-video">
+                <h3>Video</h3>
+              </div>
+              <img src="./images/img-exp-content-04.png" alt="animal" />
+            </li>
+            <li class="exp-tab-item" data-tab="5">
+              <div class="exp-video">
+                <h3>Video</h3>
+              </div>
+              <img src="./images/img-exp-content-05.png" alt="animal" />
+            </li>
+            <li class="exp-tab-item" data-tab="6">
+              <div class="exp-video">
+                <h3>Video</h3>
+              </div>
+              <img src="./images/img-exp-content-06.png" alt="animal" />
+            </li>
+            <li class="exp-tab-item" data-tab="7">
+              <div class="exp-video">
+                <h3>Video</h3>
+              </div>
+              <img src="./images/img-exp-content-07.png" alt="animal" />
+            </li>
+          </ul>
+          <ul class="exp-list">
+            <li class="exp-item">
+              <img src="./images/img-exp-item-01.png" class="btn-tab exp-item-img" id="1" alt="animal" />
+            </li>
+            <li class="exp-item">
+              <img src="./images/img-exp-item-02.png" class="btn-tab exp-item-img" id="2" alt="animal" />
+            </li>
+            <li class="exp-item">
+              <img src="./images/img-exp-item-03.png" class="btn-tab exp-item-img" id="3" alt="animal" />
+            </li>
+            <li class="exp-item">
+              <img src="./images/img-exp-item-04.png" class="btn-tab exp-item-img" id="4" alt="animal" />
+            </li>
+            <li class="exp-item">
+              <img src="./images/img-exp-item-05.png" class="btn-tab exp-item-img" id="5" alt="animal" />
+            </li>
+            <li class="exp-item">
+              <img src="./images/img-exp-item-06.png" class="btn-tab exp-item-img" id="6" alt="animal" />
+            </li>
+            <li class="exp-item">
+              <img src="./images/img-exp-item-07.png" class="btn-tab exp-item-img" id="7" alt="animal" />
             </li>
           </ul>
         </div>
-        <div class="exc-img">
-          <img src="./images/img-exc-bg-01.png" alt="anime" />
-        </div>
-        <div class="exc-img">
-          <img src="./images/img-exc-bg-02.png" alt="anime" />
-        </div>
-        <div class="exc-img">
-          <img src="./images/img-exc-bg-03.png" alt="anime" />
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <h3 class="footer-title">STRATEGIC COOPERATION</h3>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <img src="./images/img-footer-01.png" alt="binance chain" />
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <img src="./images/img-footer-02.png" alt="yoo shi" />
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <img src="./images/img-footer-03.png" alt="coin market cap" />
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <img src="./images/img-footer-04.png" alt="coin gecko" />
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <img src="./images/img-footer-05.png" alt="certik" />
-              </a>
-            </li>
-          </ul>
-          <div class="footer-bottom">
-            <div class="footer-bottom-left">
-              <span class="footer-caption">Incubated by</span>
-              <img
-                src="./images/img-footer-logo.png"
-                alt="yoo shi"
-                class="footer-bottom-img"
-              />
-            </div>
-            <p class="footer-bottom-desc">
-              Copyright &copy; 2021 StarMon.io All Rights Reserved
+      </div>
+    </section>
+    <section class="key">
+      <div class="key-container">
+        <h3 class="key-title text-translate" key="s4_1">MAPS</h3>
+        <p class="key-desc text-translate" key="s4_2">
+          Worlds with diverse landscapes from deserts, ruined cities, deep seas... help you satisfy the power of
+          discovery.In particular, each map will have interactions with Para monsters with different attributes to
+          increase or limit strength.
+        </p>
+        <img src="./images/img-stone.png" alt="stone" class="key-stone-img" />
+        <img src="./images/img-plate.png" alt="plate" class="key-plate-img" />
+        <img src="./images/img-exp-item-07.png" alt="animal" class="key-animal-img" />
+      </div>
+    </section>
+    <section class="play">
+      <div class="play-container container">
+        <h3 class="play-title text-translate" key="s5_1">GAMEPLAY</h3>
+        <div class="play-content">
+          <div class="play-item">
+            <!-- <p class="play-left-desc">
+              <strong>Kaby Arena</strong> is a tactical multiplayer role
+              playing game which combines Free-to-Play and Play-to-Earn to
+              provide an open economy for every player.
+            </p> -->
+            <p class="play-left-desc text-translate" key="s5_2">
+              Collect, evolve, and trade unique NFT heroes to build the best adventure team. Rise through the ranks to
+              claim tournament rewards!
             </p>
+            <img src="./images/img-play.png" alt="play" class="play-img" />
+          </div>
+          <div class="play-item">
+            <div class="play-item-content">
+              <img src="./images/img-play-icon-01.png" alt="play-free" class="play-item-img" />
+              <div class="play-item-right">
+                <h3 class="play-item-title">Free to play</h3>
+                <p class="play-item-desc text-translate" key="s5_3">
+                  Players start with basic non-NFT heroes. By playing, they can collect materials, armors and
+                  loot-boxes.
+                </p>
+                <p class="play-item-desc text-translate" key="s5_4">
+                  Free heroes & armors can be minted into NFT using Paraverse Token.
+                </p>
+              </div>
+            </div>
+            <div class="play-item-content">
+              <img src="./images/img-play-icon-02.png" alt="play-free" class="play-item-img" />
+              <div class="play-item-right">
+                <h3 class="play-item-title">Play-to-earn</h3>
+                <p class="play-item-desc text-translate" key="s5_5">
+                  Gaming is not only for fun, it can earn you money: Play-to-earn with dynamic farming system and active
+                  market, every heroes/items can be minted into NFT.
+                </p>
+              </div>
+            </div>
+            <div class="play-item-content">
+              <img src="./images/img-play-icon-03.png" alt="play-free" class="play-item-img" />
+              <div class="play-item-right">
+                <h3 class="play-item-title">Crypto war</h3>
+                <p class="play-item-desc">
+                  Gameplay involves the crypto market - predict the market
+                  fluctuations correctly to earn in-game advantages.
+                </p>
+              </div>
+            </div>
+            <div class="play-item-content">
+              <img src="./images/img-play-icon-04.png" alt="play-free" class="play-item-img" />
+              <div class="play-item-right">
+                <h3 class="play-item-title text-translate" key="s5_6">Assets for rent</h3>
+                <p class="play-item-desc text-translate" key="s5_7">
+                  Solve blockchain & NFT games problem: enable users to put their assets for rent with high credibility.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./scripts/index.js"></script>
-  </body>
+      </div>
+    </section>
+    <section class="token">
+      <div class="token-container">
+        <h2 class="token-title">TOKEN ALLOCATION</h2>
+        <div class="token-chart">
+          <div class="token-chart-left">
+            <img src="./images/img-exp-item-04.png" alt="animal" class="token-chart-img" />
+            <img src="./images/img-exp-item-06.png" alt="animal" class="token-chart-img" />
+            <img src="./images/img-exp-item-05.png" alt="animal" class="token-chart-img" />
+            <img src="./images/img-exp-item-07.png" alt="animal" class="token-chart-img" />
+          </div>
+          <div class="token-chart-right">
+            <img src="./images/img-chart.png" alt="chart" />
+            <div class="token-chart-buy">
+              <span class="token-total"> Total Supply: 100,000,000</span>
+              <button class="token-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exc">
+      <div class="exc-container">
+        <h2 class="exc-title text-translate" key="s6_1">EXCITING FUTURE</h2>
+        <p class="exc-desc text-translate" key="s6_2">
+          Our vision is to create a charming collection and metaverse ecosystem.
+        </p>
+        <ul class="exc-list">
+          <li class="exc-item">
+            <!-- <h3 class="exc-item-title">Starmon Land</h3>
+            <p class="exc-item-desc">
+              The Andres is composed of a quantity of lands which will be
+              presented in the form of NFT. Here anyone can buy and own
+              virtual StarMon Land, collect and forge props, and make new
+              friends.
+            </p> -->
+          </li>
+          <li class="exc-item">
+            <h3 class="exc-item-title text-translate" key="s6_3">Paraverse Avatar NFTs</h3>
+            <p class="exc-item-desc text-translate" key="s6_4">
+              Create your own unique digital world avatar in Paraverse Metaverse.
+            </p>
+          </li>
+          <li class="exc-item">
+            <h3 class="exc-item-title text-translate" key="s6_5">Paraverse Go</h3>
+            <p class="exc-item-desc text-translate" key="s6_6">
+              Bring a different experience and gameplay to Paraverse Metaverse through AR and VR technology! Take your
+              Para monster to explore and fight in the real world!
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="exc-img">
+        <img src="./images/img-exc-bg-01.png" alt="anime" />
+      </div>
+      <div class="exc-img">
+        <img src="./images/img-exc-bg-02.png" alt="anime" />
+      </div>
+      <div class="exc-img">
+        <img src="./images/img-exc-bg-03.png" alt="anime" />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <h3 class="footer-title">STRATEGIC COOPERATION</h3>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#" class="footer-link">
+              <img src="./images/img-footer-01.png" alt="binance chain" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">
+              <img src="./images/img-footer-02.png" alt="yoo shi" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">
+              <img src="./images/img-footer-03.png" alt="coin market cap" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">
+              <img src="./images/img-footer-04.png" alt="coin gecko" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">
+              <img src="./images/img-footer-05.png" alt="certik" />
+            </a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <span class="footer-caption">Incubated by</span>
+            <img src="./images/img-footer-logo.png" alt="yoo shi" class="footer-bottom-img" />
+          </div>
+          <p class="footer-bottom-desc">
+            Copyright &copy; 2021 Paraverse.ai All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
 </html>
