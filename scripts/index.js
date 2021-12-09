@@ -34,16 +34,52 @@ btnTab.forEach((element) => {
 
 // show popup
 const btnPlayNow = document.querySelector("#btn-play-now");
-const btnClosePopup = document.querySelector(".header-close-popup");
-const popupContent = document.querySelector(".header-popup");
+const btnMarket = document.querySelector("#btn-market");
+const btnMint = document.querySelector("#btn-mint");
+const btnFarm = document.querySelector("#btn-farm");
+
+const btnClosePlay = document.querySelector("#close-play");
+const btnCloseMarket = document.querySelector("#close-market");
+const btnCloseMint = document.querySelector("#close-mint");
+const btnCloseFarm = document.querySelector("#close-farm");
+
+const popupPlay = document.querySelector("#popup-play");
+const popupMarket = document.querySelector("#popup-market");
+const popupMint = document.querySelector("#popup-mint");
+const popupFarm = document.querySelector("#popup-farm");
 
 btnPlayNow.addEventListener("click", () => {
   menuHeader.classList.remove(isActive);
-  popupContent.style.display = "block";
+  popupPlay.style.display = "block";
+});
+btnMarket.addEventListener("click", () => {
+  menuHeader.classList.remove(isActive);
+  popupMarket.style.display = "block";
+});
+btnMint.addEventListener("click", () => {
+  menuHeader.classList.remove(isActive);
+  popupMint.style.display = "block";
+});
+btnFarm.addEventListener("click", () => {
+  menuHeader.classList.remove(isActive);
+  popupFarm.style.display = "block";
 });
 
-btnClosePopup.addEventListener("click", () => {
-  popupContent.style.display = "none";
+btnClosePlay.addEventListener("click", () => {
+  popupPlay.style.display = "none";
+});
+
+btnCloseMarket.addEventListener("click", () => {
+  popupMarket.style.display = "none";
+  console.log('xxx');
+});
+
+btnCloseMint.addEventListener("click", () => {
+  popupMint.style.display = "none";
+});
+
+btnCloseFarm.addEventListener("click", () => {
+  popupFarm.style.display = "none";
 });
 
 

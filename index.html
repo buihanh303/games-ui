@@ -32,14 +32,14 @@
                 <span class="header-item-link lang" key="play">play now</span>
                 <img src="./images/img-play-new.png" alt="play new">
               </li>
-              <li class="header-item">
-                <a href="#" class="header-item-link lang" key="market">marketplace</a>
+              <li class="header-item" id="btn-market">
+                <span class="header-item-link lang" key="market">marketplace</span>
               </li>
-              <li class="header-item">
-                <a href="#" class="header-item-link lang" key="mint">mint</a>
+              <li class="header-item" id="btn-mint">
+                <span class="header-item-link lang" key="mint">mint</span>
               </li>
-              <li class="header-item">
-                <a href="#" class="header-item-link lang" key="farm">farm</a>
+              <li class="header-item" id="btn-farm">
+                <span class="header-item-link lang" key="farm">farm</span>
               </li>
               <li class="header-item">
                 <a href="#" class="header-item-link lang" key="mining">mining</a>
@@ -124,16 +124,59 @@
       <video class="header-video" width="100%" height="auto" playsinline autoplay="autoplay" loop="loop" muted="muted">
         <source src="./video/video-header.mp4">
       </video>
-      <div class="header-popup">
+      <div class="header-popup" id="popup-play">
         <div class="header-popup-item">
           <div class="header-popup-content">
-            <i class="fas fa-times header-close-popup"></i>
+            <i class="fas fa-times header-close-popup" id="close-play"></i>
             <h3 class="header-popup-title">welcome to play</h3>
+            <img src="./images/img-popup-01.png" alt="popup" class="header-popup-img">
             <p class="header-popup-desc">
               Download and install, enter the game, and register at the login
               interface
             </p>
-            <button class="header-popup-btn"><a href="#">Download</a></button>
+            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="header-popup" id="popup-market">
+        <div class="header-popup-item">
+          <div class="header-popup-content">
+            <i class="fas fa-times header-close-popup" id="close-market"></i>
+            <h3 class="header-popup-title">welcome to play</h3>
+            <img src="./images/img-popup-01.png" alt="popup" class="header-popup-img">
+            <p class="header-popup-desc">
+              Download and install, enter the game, and register at the login
+              interface
+            </p>
+            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="header-popup" id="popup-mint">
+        <div class="header-popup-item">
+          <div class="header-popup-content">
+            <i class="fas fa-times header-close-popup" id="close-mint"></i>
+            <h3 class="header-popup-title">welcome to play</h3>
+            <img src="./images/img-popup-01.png" alt="popup" class="header-popup-img">
+            <p class="header-popup-desc">
+              Download and install, enter the game, and register at the login
+              interface
+            </p>
+            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="header-popup" id="popup-farm">
+        <div class="header-popup-item">
+          <div class="header-popup-content">
+            <i class="fas fa-times header-close-popup" id="close-farm"></i>
+            <h3 class="header-popup-title">welcome to play</h3>
+            <img src="./images/img-popup-01.png" alt="popup" class="header-popup-img">
+            <p class="header-popup-desc">
+              Download and install, enter the game, and register at the login
+              interface
+            </p>
+            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
           </div>
         </div>
       </div>
@@ -147,15 +190,15 @@
           <h3 class="video-title text-translate" key="s1_1">PARAVERSE NFT PLAY TO EARN GAME</h3>
           <ul class="header-center-list">
             <li class="header-center-item">
-              <img src="./images/img-battle.png" alt="battle" class="header-center-img" />
+              <img src="./images/img-play-icon-01.png" alt="battle" class="header-center-img" />
               <span class="header-center-desc text-translate" key="s7_1">Battle</span>
             </li>
             <li class="header-center-item">
-              <img src="./images/img-collect.png" alt="collect" class="header-center-img" />
+              <img src="./images/img-play-icon-02.png" alt="collect" class="header-center-img" />
               <span class="header-center-desc text-translate" key="s7_2">Bollect</span>
             </li>
             <li class="header-center-item">
-              <img src="./images/img-earn.png" alt="earn" class="header-center-img" />
+              <img src="./images/img-play-icon-03.png" alt="earn" class="header-center-img" />
               <span class="header-center-desc text-translate" key="s7_3">Earn</span>
             </li>
           </ul>
@@ -270,9 +313,9 @@
           discovery.In particular, each map will have interactions with Para monsters with different attributes to
           increase or limit strength.
         </p>
-        <img src="./images/img-stone.png" alt="stone" class="key-stone-img" />
+        <!-- <img src="./images/img-stone.png" alt="stone" class="key-stone-img" /> -->
         <img src="./images/img-plate.png" alt="plate" class="key-plate-img" />
-        <img src="./images/img-exp-item-07.png" alt="animal" class="key-animal-img" />
+        <!-- <img src="./images/img-exp-item-07.png" alt="animal" class="key-animal-img" /> -->
       </div>
     </section>
     <section class="play">

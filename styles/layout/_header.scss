@@ -80,12 +80,13 @@
   }
   &-center-list {
     @include flexBox(center, center);
+    margin: 2rem 0;
   }
   &-center-item {
     @include flexBox(center);
     img {
-      max-width: 2rem;
-      max-height: 2rem;
+      width: 2rem;
+      height: 2rem;
       margin-right: 1rem;
     }
   }
@@ -105,16 +106,19 @@
     border-radius: 1rem;
     text-transform: uppercase;
     transition: all 0.25s ease;
+    background-color: #6c757d;
+    opacity: 0.8;
     &:hover {
       transform: translateY(-5px);
+      // cursor: unset;
     }
   }
   &-play {
-    background-color: #e12a44;
+    // background-color: #e12a44;
     margin-right: 3rem;
   }
   &-buy {
-    background-color: #358d46;
+    // background-color: #358d46;
   }
   &-bar,
   &-close-icon {
@@ -138,6 +142,9 @@
     z-index: 99;
     color: white;
   }
+  &-popup-img {
+    height: 30rem;
+  }
   &-popup-item {
     height: 100vh;
     @include flexBox(center, center);
@@ -146,7 +153,7 @@
     background-color: #1b1b1b;
     border-radius: 1.6rem;
     max-width: 460px;
-    height: 535px;
+    // height: 535px;
     @include flexBox(center, center, column);
     text-align: center;
     padding: 2rem 4rem 3rem;
@@ -158,7 +165,7 @@
     font-weight: 500;
   }
   &-popup-desc {
-    margin: 3rem 0;
+    margin: 3rem 0 0;
     line-height: 1.7;
   }
   &-popup-btn {
@@ -245,6 +252,9 @@
     &-video {
       position: unset;
     }
+    &-center-list {
+      margin-left: -8rem;
+    }
   }
 
   @include minWidth(1400px) {
@@ -327,6 +337,9 @@
     }
     &-popup-content {
       max-width: 90vw;
+    }
+    &-popup-img {
+      height: auto;
     }
   }
   @include maxWidth(424px) {
