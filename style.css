@@ -885,7 +885,7 @@ button {
   color: #2f2e41;
   font-size: 1.6rem;
   font-weight: 400;
-  max-width: 40rem;
+  max-width: 97rem;
 }
 .key-stone-img {
   max-width: 48rem;
@@ -1189,7 +1189,6 @@ button {
 }
 .play-title::after {
   content: "";
-  background: url(./images/img-play-bg-text.png) no-repeat left/cover;
   left: 50%;
   bottom: 0;
   width: 16rem;
