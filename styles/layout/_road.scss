@@ -1,6 +1,6 @@
 .road {
-	background-color: #26214a;
-	color: white;
+	background-color: white;
+	color: black;
 	padding: 7rem 0;
 	// &-top {
 	// 	width: 50%;
@@ -21,6 +21,7 @@
 	}
 	&-img {
 		width: 65%;
+		object-fit: contain;
 	}
 	&-bottom {
 		margin-left: 3rem;

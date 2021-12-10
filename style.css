@@ -1042,8 +1042,8 @@ button {
       margin-top: 5rem; } }
 
 .road {
-  background-color: #26214a;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 7rem 0; }
   .road-year {
     font-size: 5.2rem;
@@ -1057,7 +1057,8 @@ button {
     flex-direction: row;
     flex-wrap: nowrap; }
   .road-img {
-    width: 65%; }
+    width: 65%;
+    object-fit: contain; }
   .road-bottom {
     margin-left: 3rem; }
   .road-content {
