@@ -85,10 +85,11 @@
   }
   &-center-item {
     @include flexBox(center);
+    flex-direction: column;
     img {
-      width: 2rem;
-      height: 2rem;
-      margin-right: 1rem;
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 5px;
     }
   }
   &-center-item:nth-child(2) {
@@ -254,7 +255,7 @@
       position: unset;
     }
     &-center-list {
-      margin-left: -8rem;
+      margin-left: -10rem;
     }
   }
 

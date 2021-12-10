@@ -293,11 +293,12 @@ button {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    flex-direction: column; }
     .header-center-item img {
-      width: 2rem;
-      height: 2rem;
-      margin-right: 1rem; }
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 5px; }
   .header-center-item:nth-child(2) {
     margin: 0 4rem; }
   .header-bottom {
@@ -433,7 +434,7 @@ button {
       .header-video {
         position: unset; }
       .header-center-list {
-        margin-left: -8rem; } }
+        margin-left: -10rem; } }
   @media screen and (min-width: 1400px) {
     .header {
       padding-bottom: 0; }
