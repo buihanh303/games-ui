@@ -49,6 +49,7 @@
     &:hover {
       cursor: pointer;
     }
+    font-weight: bold;
   }
   &-contact {
     @include flexBox(center);

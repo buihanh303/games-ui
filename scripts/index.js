@@ -107,7 +107,7 @@ const arrLang = {
     s6_5: "Paraverse Go",
     s6_6: "Bring a different experience and gameplay to Paraverse Metaverse through AR and VR technology! Take your Para monster to explore and fight in the real world!",
     s7_1: "Battle",
-    s7_2: "Bollect",
+    s7_2: "Collect",
     s7_3: "Earn",
   },
   ja: {
@@ -233,7 +233,7 @@ const arrLang = {
     s6_5: "Paraverse Go",
     s6_6: "Bring a different experience and gameplay to Paraverse Metaverse through AR and VR technology! Take your Para monster to explore and fight in the real world!",
     s7_1: "Battle",
-    s7_2: "Bollect",
+    s7_2: "Collect",
     s7_3: "Earn",
   },
   id: {
@@ -433,7 +433,7 @@ const arrLang = {
     s6_5: "Paraverse Go",
     s6_6: "Bring a different experience and gameplay to Paraverse Metaverse through AR and VR technology! Take your Para monster to explore and fight in the real world!",
     s7_1: "Battle",
-    s7_2: "Bollect",
+    s7_2: "Collect",
     s7_3: "Earn",
   },
 };
