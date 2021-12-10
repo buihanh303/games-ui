@@ -9,7 +9,6 @@
   }
   &-title {
     @include textStyle($title-color, 3.2rem, 500);
-    margin-top: -6rem;
   }
   &-desc {
     margin: 2rem 0 7rem;
