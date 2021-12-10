@@ -1045,7 +1045,7 @@ button {
   background-color: #26214a;
   color: white;
   padding: 7rem 0; }
-  .road-title {
+  .road-year {
     font-size: 5.2rem;
     font-weight: 500;
     text-align: center;
@@ -1056,12 +1056,40 @@ button {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: nowrap; }
-  .road-left {
-    max-width: 50%; }
-    .road-left img {
-      height: 100%; }
-  .road-right {
+  .road-img {
+    width: 65%; }
+  .road-bottom {
     margin-left: 3rem; }
+  .road-content {
+    border-left: 2px solid #c6b6ff; }
+  .road-item {
+    position: relative; }
+  .road-item:not(:last-child) {
+    margin-bottom: 10rem; }
+  .road-item::before {
+    content: "";
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    border: solid 3px #ffcf3d;
+    background-color: #122272;
+    transform: translateX(-50%);
+    z-index: 5;
+    margin-left: -1px; }
+  .road-item-title {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem; }
+  .road-item-desc {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: #b1aebf; }
+  .road-item-desc:not(:last-child) {
+    margin-bottom: 1.5rem; }
 
 @media screen and (max-width: 1023px) {
   .road {
@@ -1070,13 +1098,13 @@ button {
       margin-bottom: 7rem; }
     .road-container {
       flex-direction: column-reverse; }
-    .road-title {
+    .road-year {
       font-size: 4.5rem; }
-    .road-right {
-      margin-left: 0; }
-    .road-left {
-      max-width: 100%;
-      margin-top: 3rem; } }
+    .road-img {
+      width: 100%; }
+    .road-bottom {
+      width: 100%;
+      margin: 0 0 4rem; } }
 .pd-left-lg {
   padding-left: 15%; }
 
