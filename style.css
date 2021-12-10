@@ -1042,9 +1042,15 @@ button {
       margin-top: 5rem; } }
 
 .road {
-  background-color: white;
-  color: black;
+  background-color: #26214a;
+  color: white;
   padding: 7rem 0; }
+  .road-left {
+    max-width: 50%; }
+    .road-left img {
+      height: 100%; }
+  .road-right {
+    margin-left: 3rem; }
   .road-year {
     font-size: 5.2rem;
     font-weight: 500;
@@ -1094,6 +1100,8 @@ button {
 
 @media screen and (max-width: 1023px) {
   .road {
+    background-color: white;
+    color: black;
     padding: 5rem 0; }
     .road-item:not(:last-child) {
       margin-bottom: 7rem; }
@@ -1111,6 +1119,13 @@ button {
 
 .pd-left-sm {
   padding-left: 10%; }
+
+@media screen and (min-width: 1024px) {
+  #road-mobile {
+    display: none; } }
+@media screen and (max-width: 1023px) {
+  #road-pc {
+    display: none; } }
 
 .footer {
   background-color: #1a1e29;
