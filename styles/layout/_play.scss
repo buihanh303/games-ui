@@ -74,6 +74,7 @@
   @include maxWidth(767px) {
     &-left-desc {
       max-width: 100%;
+      text-align: center;
     }
     &-item-content:not(:last-child) {
       max-height: 20rem;
