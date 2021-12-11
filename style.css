@@ -728,7 +728,10 @@ button {
   .video-animal-img {
     max-width: 24rem;
     left: 50%;
-    transform: translate(-50%, 32%);
+    transform: translate(-50%, 45%);
+  }
+  .video-desc {
+    text-align: center;
   }
 }
 
@@ -837,6 +840,7 @@ button {
   .exp-list {
     justify-content: flex-start;
     margin-top: 2rem;
+    margin-left: 6rem;
     overflow-x: scroll;
     max-width: 100%;
     min-height: 4.6rem;
@@ -1313,7 +1317,7 @@ button {
   margin-left: 3rem;
 }
 .road-content {
-  border-left: 2px solid #c6b6ff;
+  border-left: 2px solid #000000;
 }
 .road-item {
   position: relative;
@@ -1329,8 +1333,8 @@ button {
   top: 0;
   left: 0;
   border-radius: 1rem;
-  border: solid 3px #ffcf3d;
-  background-color: #122272;
+  border: solid 3px #000000;
+  background-color: #ffffff;
   transform: translateX(-50%);
   z-index: 5;
   margin-left: -1px;
