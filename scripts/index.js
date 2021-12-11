@@ -37,16 +37,19 @@ const btnPlayNow = document.querySelector("#btn-play-now");
 const btnMarket = document.querySelector("#btn-market");
 const btnMint = document.querySelector("#btn-mint");
 const btnFarm = document.querySelector("#btn-farm");
+const btnMining = document.querySelector("#btn-mining");
 
 const btnClosePlay = document.querySelector("#close-play");
 const btnCloseMarket = document.querySelector("#close-market");
 const btnCloseMint = document.querySelector("#close-mint");
 const btnCloseFarm = document.querySelector("#close-farm");
+const btnCloseMining = document.querySelector("#close-mining");
 
 const popupPlay = document.querySelector("#popup-play");
 const popupMarket = document.querySelector("#popup-market");
 const popupMint = document.querySelector("#popup-mint");
 const popupFarm = document.querySelector("#popup-farm");
+const popupMining = document.querySelector("#popup-mining");
 
 btnPlayNow.addEventListener("click", () => {
   menuHeader.classList.remove(isActive);
@@ -64,6 +67,10 @@ btnFarm.addEventListener("click", () => {
   menuHeader.classList.remove(isActive);
   popupFarm.style.display = "block";
 });
+btnMining.addEventListener("click", () => {
+  menuHeader.classList.remove(isActive);
+  popupMining.style.display = "block";
+});
 
 btnClosePlay.addEventListener("click", () => {
   popupPlay.style.display = "none";
@@ -80,6 +87,9 @@ btnCloseMint.addEventListener("click", () => {
 
 btnCloseFarm.addEventListener("click", () => {
   popupFarm.style.display = "none";
+});
+btnCloseMining.addEventListener("click", () => {
+  popupMining.style.display = "none";
 });
 
 
