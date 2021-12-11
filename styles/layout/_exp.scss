@@ -1,5 +1,5 @@
 .exp {
-  background: url("./images/img-bg-exp.jpg") no-repeat center / cover;
+  background: url("./images/img-bg-exp.png") no-repeat center / cover;
   &-title {
     @include textStyle(white, 3.2rem, 500);
     text-transform: uppercase;
