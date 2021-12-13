@@ -1020,8 +1020,8 @@ button {
   bottom: -134px;
 }
 .token-chart-right {
-  max-width: 60rem;
-  padding: 5rem 5rem 5rem 0;
+  max-width: 68rem;
+  padding: 5rem 0rem 0rem 0;
 }
 .token-chart-left {
   flex: 1;
