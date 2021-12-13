@@ -1000,9 +1000,9 @@ button {
   left: 124px;
 }
 .token-chart-img:nth-child(2) {
-  max-width: 13.8rem;
+  max-width: 18.8rem;
   top: 119px;
-  left: 117px;
+  left: 124px;
 }
 .token-chart-img:nth-child(3) {
   top: 42px;
@@ -1010,9 +1010,14 @@ button {
   max-width: 16.2rem;
 }
 .token-chart-img:nth-child(4) {
-  max-width: 24.9rem;
-  left: 48px;
-  bottom: -19px;
+  max-width: 19.2rem;
+  left: -95px;
+  bottom: 32px;
+}
+.token-chart-img:nth-child(5) {
+  max-width: 27.2rem;
+  left: 90px;
+  bottom: -60px;
 }
 .token-chart-right {
   max-width: 54.7rem;
