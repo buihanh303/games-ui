@@ -679,7 +679,7 @@ button {
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 10rem 1.5rem 21rem;
+  padding: 10rem 1.5rem 8rem;
   position: relative;
 }
 .video-title {
@@ -701,6 +701,10 @@ button {
   left: 23%;
   bottom: 0;
   transform: translateY(52%);
+}
+.video-animal-video {
+  width: 100%;
+  border-radius: 5rem;
 }
 @media screen and (min-width: 1024px) {
   .video-left {
@@ -761,7 +765,7 @@ button {
   flex-wrap: nowrap;
   max-width: 1230px;
   margin: 0 auto;
-  padding: 25.6rem 1.5rem 12rem;
+  padding: 8rem 1.5rem 12rem;
 }
 .exp-tab {
   margin-top: 8rem;
@@ -1217,7 +1221,7 @@ button {
 }
 .play-img {
   max-width: 90%;
-  margin-top: 11rem;
+  margin-top: 8rem;
 }
 .play-item-content {
   display: flex;
@@ -1281,6 +1285,7 @@ button {
   }
   .play-img {
     margin-top: 5rem;
+    margin-left: 2rem;
   }
 }
 

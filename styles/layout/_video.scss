@@ -2,7 +2,7 @@
   background-color: white;
   &-container {
     @include flexBox(center, center);
-    padding: 10rem 1.5rem 21rem;
+    padding: 10rem 1.5rem 8rem;
     position: relative;
   }
   &-title {
@@ -21,6 +21,10 @@
     left: 23%;
     bottom: 0;
     transform: translateY(52%);
+  }
+  &-animal-video {
+    width: 100%;
+    border-radius: 5rem;
   }
   @include minWidth(1024px) {
     &-left {
