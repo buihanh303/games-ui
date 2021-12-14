@@ -1008,12 +1008,12 @@ button {
 .token-chart-img:nth-child(4) {
   max-width: 19.2rem;
   left: -10px;
-  bottom: -12px;
+  bottom: 0px;
 }
 .token-chart-img:nth-child(5) {
   max-width: 27.2rem;
   left: 82px;
-  bottom: -134px;
+  bottom: -122px;
 }
 .token-chart-right {
   max-width: 68rem;
@@ -1028,6 +1028,7 @@ button {
 }
 .token-chart-buy {
   margin-top: 2.5rem;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
