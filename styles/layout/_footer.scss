@@ -1,6 +1,6 @@
 .footer {
   background-color: #1a1e29;
-  padding: 11rem 0 4.7rem;
+  padding: 5rem 0 4.7rem;
   &-container {
     max-width: $container;
     margin: 0 auto;
@@ -14,7 +14,7 @@
   }
   &-list {
     @include flexBox(center, center, row, wrap);
-    margin: 7.7rem 0 12.6rem;
+    margin: 3rem 0 3rem;
   }
   &-item {
     max-width: 18.8rem;

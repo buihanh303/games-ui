@@ -15,7 +15,7 @@
     @include flexBox(center, flex-start, column);
     max-width: $container;
     margin: 0 auto;
-    padding: 8rem 1.5rem 12rem;
+    padding: 5rem 1.5rem 12rem;
   }
   &-tab {
     margin-top: 8rem;
@@ -82,7 +82,7 @@
       height: calc(50vw - 2rem);
     }
     &-container {
-      padding: 12rem 1.5rem 5rem;
+      // padding: 5rem 1.5rem 5rem;
     }
     &-list {
       justify-content: flex-start;

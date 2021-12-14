@@ -1,5 +1,5 @@
 .key {
-  padding-top: 11rem;
+  padding-top: 5rem;
   text-align: center;
   &-container {
     @include flexBox(center, center, column);
@@ -9,7 +9,6 @@
   }
   &-title {
     @include textStyle($title-color, 3.2rem, 500);
-    margin-top: -6rem;
   }
   &-desc {
     margin: 2rem 0 7rem;

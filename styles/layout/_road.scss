@@ -13,11 +13,11 @@
 		margin-left: 3rem;
 	}
 	&-year {
-		font-size: 3.6rem;
+		font-size: 3.2rem;
 		font-weight: 500;
 		text-align: center;
 		margin-bottom: 3rem;
-		// margin-top: -20%;
+		margin-top: -2rem;
 	}
 	&-container {
 		@include flexBox();
@@ -81,7 +81,7 @@
 		}
 		&-year {
 			// margin-top: -35%;
-			font-size: 3.6rem;
+			font-size: 3.2rem;
 		}
 		&-img {
 			width: 100%;
@@ -89,6 +89,12 @@
 		&-bottom {
 			width: 100%;
 			margin: 0 0 4rem;
+		}
+		&-footer {
+			font-size: 3.2rem;
+			font-weight: 500;
+			text-align: center;
+			margin-top: 2rem;
 		}
 	}
 }

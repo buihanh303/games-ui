@@ -1,5 +1,5 @@
 .token {
-  padding: 10rem 0 2rem;
+  padding: 5rem 0 12rem;
   background-color: #292f40;
   &-container {
     max-width: $container;
@@ -20,31 +20,31 @@
   &-chart-img:nth-child(1) {
     max-width: 15.3rem;
     top: -82px;
-    left: 143px;
+    left: 150px;
   }
   &-chart-img:nth-child(2) {
     max-width: 23.8rem;
     top: 105px;
-    left: 124px;
+    left: 100px;
   }
   &-chart-img:nth-child(3) {
     top: 42px;
-    left: -1px;
+    left: -10px;
     max-width: 16.2rem;
   }
   &-chart-img:nth-child(4) {
     max-width: 19.2rem;
-    left: -1px;
+    left: -10px;
     bottom: -12px;
   }
   &-chart-img:nth-child(5) {
     max-width: 27.2rem;
-    left: 90px;
+    left: 82px;
     bottom: -134px;
   }
   &-chart-right {
     max-width: 68rem;
-    padding: 5rem 0rem 0rem 0;
+    padding: 3rem 0rem 0rem 0;
   }
   &-chart-left {
     flex: 1;
