@@ -16,6 +16,10 @@
     @include flexBox(center, center, row, wrap);
     margin: 3rem 0 3rem;
   }
+  &-icon-list {
+    @include flexBox(center, center, row, wrap);
+    margin: 3rem 0 3rem;
+  }
   &-item {
     max-width: 18.8rem;
     background-color: white;
@@ -56,9 +60,16 @@
       margin-left: 0;
     }
     &-list {
-      margin: 2rem 0 10rem;
+      margin: 2rem 0 -2rem;
+    }
+    &-icon-list {
+      margin: 4rem 0 -2rem;
     }
     &-title {
+      font-size: 3rem;
+    }
+    &-sub-title {
+      margin-top: 5rem;
       font-size: 3rem;
     }
   }

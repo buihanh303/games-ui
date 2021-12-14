@@ -340,7 +340,7 @@ const arrLang = {
     s7_3: "Verdiene",
   },
   pi: {
-    s0_0: "Pilipino",
+    s0_0: "Filipino",
     s1_1: "PARAVERSE NFT MAGLARO PARA KUMITA NG LARO",
     s1_2: "Matapos pumasok sa Paraverse, ang mga manlalaro ay maaaring makakuha ng mga token sa pamamagitan ng mga laro at kontribusyon sa ecosystem. Maaaring kolektahin, sanayin o ipagpalit ng mga manlalaro ang Para monster, o kaya naman ay sanayin ang mga itong makipagsapalaran sa mga labanan upang mas pahusayin ang kakayanan ng manlalaro at kilalanin bilang pinakamagaling na Para monster trainer sa Paraverse.",
     s2_1: "TUKLASIN ANG MUNDO NG PARAVERSE",

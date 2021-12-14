@@ -1437,6 +1437,14 @@ button {
   flex-wrap: wrap;
   margin: 3rem 0 3rem;
 }
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem 0 3rem;
+}
 .footer-item {
   max-width: 18.8rem;
   background-color: white;
@@ -1491,9 +1499,16 @@ button {
     margin-left: 0;
   }
   .footer-list {
-    margin: 2rem 0 10rem;
+    margin: 2rem 0 -2rem;
+  }
+  .footer-icon-list {
+    margin: 4rem 0 -2rem;
   }
   .footer-title {
+    font-size: 3rem;
+  }
+  .footer-sub-title {
+    margin-top: 5rem;
     font-size: 3rem;
   }
 }
