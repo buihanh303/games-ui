@@ -59,6 +59,7 @@
   }
   &-total {
     @include textStyle(white, 2rem);
+    margin-left: 20rem;
   }
   &-btn {
     @include textStyle(white, 1.8rem, 700);
@@ -88,6 +89,9 @@
     }
     &-btn {
       margin-top: 2.8rem;
+    }
+    &-total {
+      margin-left: 0rem;
     }
   }
 }
