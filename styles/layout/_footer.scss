@@ -18,7 +18,7 @@
   }
   &-icon-list {
     @include flexBox(center, center, row, wrap);
-    margin: 3rem 0 3rem;
+    margin: 5rem 0 3rem;
   }
   &-item {
     max-width: 18.8rem;

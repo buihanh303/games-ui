@@ -1443,7 +1443,7 @@ button {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 3rem 0 3rem;
+  margin: 5rem 0 3rem;
 }
 .footer-item {
   max-width: 18.8rem;
