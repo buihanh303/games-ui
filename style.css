@@ -1435,7 +1435,7 @@ button {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 3rem 0 3rem;
+  margin: 3rem 0 3rem -1rem;
 }
 .footer-icon-list {
   display: flex;
@@ -1456,8 +1456,6 @@ button {
   flex-wrap: nowrap;
   padding: 0 1.2rem;
   border-radius: 5px;
-}
-.footer-item:not(:first-child) {
   margin-left: 1rem;
 }
 .footer-bottom {
@@ -1492,14 +1490,8 @@ button {
   .footer-item {
     margin-top: 2rem;
   }
-  .footer-item:not(:first-child) {
-    margin-left: 2rem;
-  }
-  .footer-item:nth-child(4) {
-    margin-left: 0;
-  }
   .footer-list {
-    margin: 2rem 0 -2rem;
+    margin: 2rem 0 -2rem -1rem;
   }
   .footer-icon-list {
     margin: 4rem 0 -2rem;
@@ -1513,11 +1505,8 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  .footer-item:not(:nth-child(99)) {
-    margin-left: 0;
-  }
-  .footer-list {
-    flex-direction: column;
+  .footer-item {
+    max-width: calc(50% - 1rem);
   }
   .footer-bottom {
     flex-direction: column;

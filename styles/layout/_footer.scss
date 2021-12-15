@@ -14,7 +14,7 @@
   }
   &-list {
     @include flexBox(center, center, row, wrap);
-    margin: 3rem 0 3rem;
+    margin: 3rem 0 3rem -1rem;
   }
   &-icon-list {
     @include flexBox(center, center, row, wrap);
@@ -27,10 +27,11 @@
     @include flexBox(center, center);
     padding: 0 1.2rem;
     border-radius: 5px;
-  }
-  &-item:not(:first-child) {
     margin-left: 1rem;
   }
+  // &-item:not(:first-child) {
+  //   margin-left: 1rem;
+  // }
   &-bottom {
     @include flexBox(center, center);
     font-size: 1.4rem;
@@ -53,14 +54,14 @@
     &-item {
       margin-top: 2rem;
     }
-    &-item:not(:first-child) {
-      margin-left: 2rem;
-    }
-    &-item:nth-child(4) {
-      margin-left: 0;
-    }
+    // &-item:not(:first-child) {
+    //   margin-left: 2rem;
+    // }
+    // &-item:nth-child(4) {
+    //   margin-left: 0;
+    // }
     &-list {
-      margin: 2rem 0 -2rem;
+      margin: 2rem 0 -2rem -1rem;
     }
     &-icon-list {
       margin: 4rem 0 -2rem;
@@ -74,12 +75,16 @@
     }
   }
   @include maxWidth(767px) {
-    &-item:not(:nth-child(99)) {
-      margin-left: 0;
+    // &-item:not(:nth-child(99)) {
+    //   margin-left: 0;
+    // }
+    &-item {
+      max-width: calc(50% - 1rem);
+      // margin-left: 0;
     }
-    &-list {
-      flex-direction: column;
-    }
+    // &-list {
+    //   justify-content: space-between;
+    // }
     &-bottom {
       flex-direction: column;
     }
