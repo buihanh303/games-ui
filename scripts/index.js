@@ -497,6 +497,15 @@ $(function () {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
   });
+  $(".header-language-text").click(function () {
+    if (!$(".language-list").hasClass("is-click")) {
+      $(".language-list").addClass("is-click");
+      $(".language-list").css({ display: "" });
+    } else {
+      $(".language-list").removeClass("is-click");
+      $(".language-list").css({ display: "none" });
+    }
+  });
   // $(".header-language").hover(function () {
   //   $(".language-list").removeClass("is-hover");
   // });
