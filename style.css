@@ -1192,7 +1192,7 @@ button {
 }
 
 .play {
-  background: url(./images/img-play-bg.png) no-repeat center/cover;
+  background: url(./images/img-play-bg.webp) no-repeat center/cover;
   color: white;
   padding: 5rem 0 10rem;
 }
