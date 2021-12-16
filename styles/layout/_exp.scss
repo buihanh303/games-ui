@@ -21,10 +21,10 @@
     margin-top: 8rem;
     width: 100%;
   }
-  &-tab-content {
-    border-radius: 1.8rem;
-    overflow: hidden;
-  }
+  // &-tab-content {
+  //   border-radius: 1.8rem;
+  //   overflow: hidden;
+  // }
   &-tab-item {
     @include flexBox(stretch, center);
     display: none;
@@ -35,12 +35,17 @@
   &-tab-item img {
     width: 30%;
     max-height: 40rem;
+    border-top-right-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
   }
   &-video {
-    width: 70%;
+    // width: 70%;
     height: 40rem;
     // background-color: red;
-    flex: 1;
+    // flex: 1;
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    overflow: hidden;
   }
   &-video-animal {
     width: 100%;
@@ -80,6 +85,7 @@
     &-video {
       width: 100%;
       height: calc(50vw - 2rem);
+      border-radius: 1.8rem;
     }
     &-container {
       // padding: 5rem 1.5rem 5rem;
