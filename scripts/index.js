@@ -1,3 +1,4 @@
+document.getElementsByClassName("header-video")[0].play();
 // menu mobile
 const btnToggle = document.querySelector(".header-bar");
 const menuHeader = document.querySelector(".header-list");
