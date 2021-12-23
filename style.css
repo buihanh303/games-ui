@@ -371,7 +371,21 @@ button {
   transform: translateY(-5px);
 }
 .header-play {
+  background: #358d46;
+  opacity: 1;
   margin-right: 3rem;
+}
+.header-play a {
+  color: #ffffff;
+}
+.header-play a:visited {
+  color: #ffffff;
+}
+.header-play a:hover {
+  color: #ffffff;
+}
+.header-play a:active {
+  color: #ffffff;
 }
 .header-bar, .header-close-icon {
   display: none;

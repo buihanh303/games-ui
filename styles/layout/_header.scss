@@ -115,9 +115,14 @@
     }
   }
   &-play {
-    // background-color: #e12a44;
+    background: #358d46;
+    opacity: 1;
     margin-right: 3rem;
   }
+  &-play a {color:#ffffff;}
+  &-play a:visited {color:#ffffff;}
+  &-play a:hover  {color:#ffffff;}
+  &-play a:active {color:#ffffff;}
   &-buy {
     // background-color: #358d46;
   }
