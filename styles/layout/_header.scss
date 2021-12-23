@@ -108,14 +108,14 @@
     text-transform: uppercase;
     transition: all 0.25s ease;
     background-color: #6c757d;
-    opacity: 0.8;
+    opacity: 0.4;
     &:hover {
       transform: translateY(-5px);
       // cursor: unset;
     }
   }
   &-play {
-    background: #358d46;
+    background: #000;
     opacity: 1;
     margin-right: 3rem;
   }
