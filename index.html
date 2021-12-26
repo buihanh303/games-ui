@@ -1,121 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./style.css?t=1640263574" />
+    <title>Paraverse Metaverse</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/favicon.png?t=1640263574"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paraverse.ai" />
+    <meta property="og:title" content="Paraverse: 3D NFT Play To Earn Game" />
+    <meta property="og:description" content="3D NFT Play To Earn Game" />
+    <meta
+      property="og:image"
+      content="/images/img-twitter-card-share.png?t=1640263574"
+    />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="./style.css?t=1640263574" />
-  <title>Paraverse Metaverse</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png?t=1640263574">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://paraverse.ai">
-  <meta property="og:title" content="Paraverse: 3D NFT Play To Earn Game">
-  <meta property="og:description" content="3D NFT Play To Earn Game">
-  <meta property="og:image" content="/images/img-twitter-card-share.png?t=1640263574">
-  <meta property="og:image:width" content="1920">
-  <meta property="og:image:height" content="1080">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header-content container">
-        <div class="header-top">
-          <a href="#" target="_blank" class="header-logo">
-            <h1 class="header-home">paraverse metaverse</h1>
-          </a>
-          <div class="header-links">
-            <ul class="header-list">
-              <i class="fas fa-times header-close-icon"></i>
-              <li class="header-item" id="btn-play-now">
-                <span class="header-item-link lang" key="play">play now</span>
-                <!-- <img src="./images/img-play-new.png?t=1640263574" alt="play new"> -->
-              </li>
-              <li class="header-item" id="btn-market">
-                <span class="header-item-link lang" key="market">marketplace</span>
-              </li>
-              <li class="header-item" id="btn-mint">
-                <span class="header-item-link lang" key="mint">mint</span>
-              </li>
-              <li class="header-item" id="btn-farm">
-                <span class="header-item-link lang" key="farm">farm</span>
-              </li>
-              <li class="header-item" id="btn-mining">
-                <a href="#" class="header-item-link lang" target="_blank" key="mining">mining</a>
-              </li>
-              <!-- <li class="header-item">
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-content container">
+          <div class="header-top">
+            <a href="#" target="_blank" class="header-logo">
+              <h1 class="header-home">paraverse metaverse</h1>
+            </a>
+            <div class="header-links">
+              <ul class="header-list">
+                <i class="fas fa-times header-close-icon"></i>
+                <li class="header-item" id="btn-play-now">
+                  <span class="header-item-link lang" key="play">play now</span>
+                  <!-- <img src="./images/img-play-new.png?t=1640263574" alt="play new"> -->
+                </li>
+                <li class="header-item" id="btn-market">
+                  <span class="header-item-link lang" key="market"
+                    >marketplace</span
+                  >
+                </li>
+                <li class="header-item" id="btn-mint">
+                  <span class="header-item-link lang" key="mint">mint</span>
+                </li>
+                <li class="header-item" id="btn-farm">
+                  <span class="header-item-link lang" key="farm">farm</span>
+                </li>
+                <li class="header-item" id="btn-mining">
+                  <a
+                    href="#"
+                    class="header-item-link lang"
+                    target="_blank"
+                    key="mining"
+                    >mining</a
+                  >
+                </li>
+                <!-- <li class="header-item">
                 <a href="#" class="header-item-link lang" key="map">Road Map</a>
               </li> -->
-              <li class="header-item">
-                <a href="//paraverse.ai/whitepaper" target="_blank" class="header-item-link lang" key="learn">White
-                  Paper</a>
-              </li>
-            </ul>
-            <ul class="header-contact">
-              <li class="header-contact-item">
-                <a href="https://medium.com/@paraverse_game" class="header-contact-link" target="_blank">
-                  <img src="./images/img-medium.svg?t=1640263574" alt="medium" class="header-contact-img" />
-                </a>
-              </li>
-              <li class="header-contact-item">
-                <a href="https://t.me/Paraversechannel" target="_blank" class="header-contact-link">
-                  <img src="./images/img-telegram.svg?t=1640263574" alt="telegram" class="header-contact-img" />
-                </a>
-              </li>
-              <li class="header-contact-item">
-                <a href="https://twitter.com/paraverse_game" target="_blank" class="header-contact-link">
-                  <img src="./images/img-twitter.svg?t=1640263574" alt="twitter" class="header-contact-img" />
-                </a>
-              </li>
-              <li class="header-contact-item">
-                <a href="https://discord.gg/MxudrEZkrg" target="_blank" class="header-contact-link">
-                  <img src="./images/img-discord.svg?t=1640263574" alt="discord" class="header-contact-img" />
-                </a>
-              </li>
-              <!-- <li class="header-contact-item">
+                <li class="header-item">
+                  <a
+                    href="//paraverse.ai/whitepaper"
+                    target="_blank"
+                    class="header-item-link lang"
+                    key="learn"
+                    >White Paper</a
+                  >
+                </li>
+              </ul>
+              <ul class="header-contact">
+                <li class="header-contact-item">
+                  <a
+                    href="https://medium.com/@paraverse_game"
+                    class="header-contact-link"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/img-medium.svg?t=1640263574"
+                      alt="medium"
+                      class="header-contact-img"
+                    />
+                  </a>
+                </li>
+                <li class="header-contact-item">
+                  <a
+                    href="https://t.me/Paraversechannel"
+                    target="_blank"
+                    class="header-contact-link"
+                  >
+                    <img
+                      src="./images/img-telegram.svg?t=1640263574"
+                      alt="telegram"
+                      class="header-contact-img"
+                    />
+                  </a>
+                </li>
+                <li class="header-contact-item">
+                  <a
+                    href="https://twitter.com/paraverse_game"
+                    target="_blank"
+                    class="header-contact-link"
+                  >
+                    <img
+                      src="./images/img-twitter.svg?t=1640263574"
+                      alt="twitter"
+                      class="header-contact-img"
+                    />
+                  </a>
+                </li>
+                <li class="header-contact-item">
+                  <a
+                    href="https://discord.gg/MxudrEZkrg"
+                    target="_blank"
+                    class="header-contact-link"
+                  >
+                    <img
+                      src="./images/img-discord.svg?t=1640263574"
+                      alt="discord"
+                      class="header-contact-img"
+                    />
+                  </a>
+                </li>
+                <!-- <li class="header-contact-item">
                 <a href="https://www.youtube.com/channel/UCoi4uz4M1M8ZDL-YnxjKRGQ" target="_blank" class="header-contact-link">
                   <img src="./images/img-youtube.png?t=1640263574" alt="medium" class="header-contact-img" />
                 </a>
               </li> -->
-            </ul>
-            <div class="header-language" onclick="">
-              <span class="header-language-text text-translate" key="s0_0">English</span>
-              <ul class="language-list">
-                <li class="language-item translate" id="en">English</li>
-                <li class="language-item translate" id="ko">한국어</li>
-                <li class="language-item translate" id="ja">日本語</li>
-                <li class="language-item translate" id="pi">Filipino</li>
-                <li class="language-item translate" id="ru">русский</li>
-                <li class="language-item translate" id="vi">Tiếng Việt</li>
-                <li class="language-item translate" id="zh">繁體中文</li>
-                <li class="language-item translate" id="tr">Türkçe</li>
-                <li class="language-item translate" id="pt">Português</li>
-                <li class="language-item translate" id="de">Deutsch</li>
-                <li class="language-item translate" id="fr">Français</li>
-                <li class="language-item translate" id="es">Español</li>
-                <!-- <li class="language-item translate" id="bn">বাংলাদেশ</li>pull ori   -->
-                <li class="language-item translate" id="id">Indonesia</li>
-                <!-- <li class="language-item translate" id="vi">हिंदी</li> -->
               </ul>
+              <div class="header-language" onclick="">
+                <span class="header-language-text text-translate" key="s0_0"
+                  >English</span
+                >
+                <ul class="language-list">
+                  <li class="language-item translate" id="en">English</li>
+                  <li class="language-item translate" id="ko">한국어</li>
+                  <li class="language-item translate" id="ja">日本語</li>
+                  <li class="language-item translate" id="pi">Filipino</li>
+                  <li class="language-item translate" id="ru">русский</li>
+                  <li class="language-item translate" id="vi">Tiếng Việt</li>
+                  <li class="language-item translate" id="zh">繁體中文</li>
+                  <li class="language-item translate" id="tr">Türkçe</li>
+                  <li class="language-item translate" id="pt">Português</li>
+                  <li class="language-item translate" id="de">Deutsch</li>
+                  <li class="language-item translate" id="fr">Français</li>
+                  <li class="language-item translate" id="es">Español</li>
+                  <!-- <li class="language-item translate" id="bn">বাংলাদেশ</li>pull ori   -->
+                  <li class="language-item translate" id="id">Indonesia</li>
+                  <!-- <li class="language-item translate" id="vi">हिंदी</li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="header-bar">
+              <img src="./images/img-bar.png?t=1640263574" alt="bar" />
             </div>
           </div>
-          <div class="header-bar">
-            <img src="./images/img-bar.png?t=1640263574" alt="bar" />
-          </div>
-        </div>
-        <div class="header-center">
-          <!-- <h3 class="header-caption">paraverse nft</h3> -->
-          <!-- <h2 class="header-title">paraverse metaverse</h2> -->
-          <!-- <ul class="header-center-list">
+          <div class="header-center">
+            <!-- <h3 class="header-caption">paraverse nft</h3> -->
+            <!-- <h2 class="header-title">paraverse metaverse</h2> -->
+            <!-- <ul class="header-center-list">
             <li class="header-center-item">
               <img src="./images/img-battle.png?t=1640263574" alt="battle" class="header-center-img" />
               <span class="header-center-desc text-translate" key="s7_1">Battle</span>
@@ -129,170 +192,284 @@
               <span class="header-center-desc text-translate" key="s7_3">Earn</span>
             </li>
           </ul> -->
-        </div>
-        <div class="header-bottom">
-          <button class="header-btn header-play">
-            <a href="https://gleam.io/Y8XnZ/paraverse-airdrop" target="_blank">join airdrop</a>
-          </button>
-          <button class="header-btn header-buy">buy $pame</button>
-        </div>
-      </div>
-      <video class="header-video" width="100%" height="auto" playsinline autoplay="autoplay" loop="loop" muted="muted"
-        poster="./images/img-bg-header.jpg?t=1640263574">
-        <source src="./video/video-header.mp4?t=1640263574" type="video/mp4">
-      </video>
-      <div class="header-popup" id="popup-play">
-        <div class="header-popup-item">
-          <div class="header-popup-content">
-            <i class="fas fa-times header-close-popup" id="close-play"></i>
-            <h3 class="header-popup-title">welcome to play</h3>
-            <img src="./images/img-popup-01.png?t=1640263574" alt="popup" class="header-popup-img">
-            <p class="header-popup-desc">
-              Download and install, enter the game, and register at the login
-              interface
-            </p>
-            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+          </div>
+          <div class="header-bottom">
+            <button class="header-btn header-play">
+              <a href="https://gleam.io/Y8XnZ/paraverse-airdrop" target="_blank"
+                >join airdrop</a
+              >
+            </button>
+            <button class="header-btn header-buy">buy $pame</button>
           </div>
         </div>
-      </div>
-      <div class="header-popup" id="popup-market">
-        <div class="header-popup-item">
-          <div class="header-popup-content">
-            <i class="fas fa-times header-close-popup" id="close-market"></i>
-            <!-- <h3 class="header-popup-title">welcome to play</h3> -->
-            <img src="./images/img-popup-02.png?t=1640263574" alt="popup" class="header-popup-img">
-            <p class="header-popup-desc">
-              Discover and trade your favourite items Buy and sell Paramon NFTs, Pods and other in-game items.
-            </p>
-            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
-          </div>
-        </div>
-      </div>
-      <div class="header-popup" id="popup-mint">
-        <div class="header-popup-item">
-          <div class="header-popup-content">
-            <i class="fas fa-times header-close-popup" id="close-mint"></i>
-            <!-- <h3 class="header-popup-title">welcome to play</h3> -->
-            <img src="./images/img-popup-03.png?t=1640263574" alt="popup" class="header-popup-img">
-            <p class="header-popup-desc">
-              Get Your Unique ParaMons. Let’s co-create a ParaMon Metaverse world together.
-            </p>
-            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
-          </div>
-        </div>
-      </div>
-      <div class="header-popup" id="popup-farm">
-        <div class="header-popup-item">
-          <div class="header-popup-content">
-            <i class="fas fa-times header-close-popup" id="close-farm"></i>
-            <!-- <h3 class="header-popup-title">welcome to play</h3> -->
-            <img src="./images/img-popup-04.png?t=1640263574" alt="popup" class="header-popup-img">
-            <p class="header-popup-desc">
-              Earn interest with extremely high APR.
-              Farm your Paramons, Pods and other in-game items to gain profits.
-            </p>
-            <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
-          </div>
-        </div>
-      </div>
-      <div class="header-popup" id="popup-mining">
-        <div class="header-popup-item">
-          <div class="header-popup-content">
-            <i class="fas fa-times header-close-popup" id="close-mining"></i>
-            <!-- <h3 class="header-popup-title">welcome to play</h3> -->
-            <img src="./images/img-popup-05.png?t=1640263574" alt="popup" class="header-popup-img">
-            <p class="header-popup-desc">
-              Genesis Mining Pool Stake your Genesis ParaMon NFT to Earn $PAME
+        <video
+          class="header-video"
+          width="100%"
+          height="auto"
+          playsinline
+          autoplay="autoplay"
+          loop="loop"
+          muted="muted"
+          poster="./images/img-bg-header.jpg?t=1640263574"
+        >
+          <source
+            src="./video/video-header.mp4?t=1640263574"
+            type="video/mp4"
+          />
+        </video>
+        <div class="header-popup" id="popup-play">
+          <div class="header-popup-item">
+            <div class="header-popup-content">
+              <i class="fas fa-times header-close-popup" id="close-play"></i>
+              <h3 class="header-popup-title">welcome to play</h3>
+              <img
+                src="./images/img-popup-01.png?t=1640263574"
+                alt="popup"
+                class="header-popup-img"
+              />
+              <p class="header-popup-desc">
+                Download and install, enter the game, and register at the login
+                interface
+              </p>
               <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="video">
-      <div class="video-container">
-        <div class="video-left">
-          <img src="./images/img-video.jpg?t=1640263574" alt="video-image" class="video-img" />
-          <!-- <video class="video-animal-video" playsinline autoplay="autoplay" loop="loop" muted="muted">
+        <div class="header-popup" id="popup-market">
+          <div class="header-popup-item">
+            <div class="header-popup-content">
+              <i class="fas fa-times header-close-popup" id="close-market"></i>
+              <!-- <h3 class="header-popup-title">welcome to play</h3> -->
+              <img
+                src="./images/img-popup-02.png?t=1640263574"
+                alt="popup"
+                class="header-popup-img"
+              />
+              <p class="header-popup-desc">
+                Discover and trade your favourite items Buy and sell Paramon
+                NFTs, Pods and other in-game items.
+              </p>
+              <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+            </div>
+          </div>
+        </div>
+        <div class="header-popup" id="popup-mint">
+          <div class="header-popup-item">
+            <div class="header-popup-content">
+              <i class="fas fa-times header-close-popup" id="close-mint"></i>
+              <!-- <h3 class="header-popup-title">welcome to play</h3> -->
+              <img
+                src="./images/img-popup-03.png?t=1640263574"
+                alt="popup"
+                class="header-popup-img"
+              />
+              <p class="header-popup-desc">
+                Get Your Unique ParaMons. Let’s co-create a ParaMon Metaverse
+                world together.
+              </p>
+              <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+            </div>
+          </div>
+        </div>
+        <div class="header-popup" id="popup-farm">
+          <div class="header-popup-item">
+            <div class="header-popup-content">
+              <i class="fas fa-times header-close-popup" id="close-farm"></i>
+              <!-- <h3 class="header-popup-title">welcome to play</h3> -->
+              <img
+                src="./images/img-popup-04.png?t=1640263574"
+                alt="popup"
+                class="header-popup-img"
+              />
+              <p class="header-popup-desc">
+                Earn interest with extremely high APR. Farm your Paramons, Pods
+                and other in-game items to gain profits.
+              </p>
+              <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+            </div>
+          </div>
+        </div>
+        <div class="header-popup" id="popup-mining">
+          <div class="header-popup-item">
+            <div class="header-popup-content">
+              <i class="fas fa-times header-close-popup" id="close-mining"></i>
+              <!-- <h3 class="header-popup-title">welcome to play</h3> -->
+              <img
+                src="./images/img-popup-05.png?t=1640263574"
+                alt="popup"
+                class="header-popup-img"
+              />
+              <p class="header-popup-desc">
+                Genesis Mining Pool Stake your Genesis ParaMon NFT to Earn $PAME
+                <!-- <button class="header-popup-btn"><a href="#">Download</a></button> -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="video">
+        <div class="video-container">
+          <div class="video-left">
+            <img
+              src="./images/img-video.jpg?t=1640263574"
+              alt="video-image"
+              class="video-img"
+            />
+            <!-- <video class="video-animal-video" playsinline autoplay="autoplay" loop="loop" muted="muted">
             <source src="./video/video-animals-sting.mp4?t=1640263574">
           </video> -->
+          </div>
+          <div class="video-right">
+            <h3 class="video-title text-translate" key="s1_1">
+              PARAVERSE NFT PLAY TO EARN GAME
+            </h3>
+            <ul class="header-center-list">
+              <li class="header-center-item">
+                <img
+                  src="./images/img-egg_01.png?t=1640263574"
+                  alt="battle"
+                  class="header-center-img"
+                />
+                <span class="header-center-desc text-translate" key="s7_1"
+                  >Battle</span
+                >
+              </li>
+              <li class="header-center-item">
+                <img
+                  src="./images/img-egg_02.png?t=1640263574"
+                  alt="collect"
+                  class="header-center-img"
+                />
+                <span class="header-center-desc text-translate" key="s7_2"
+                  >Collect</span
+                >
+              </li>
+              <li class="header-center-item">
+                <img
+                  src="./images/img-egg_03.png?t=1640263574"
+                  alt="earn"
+                  class="header-center-img"
+                />
+                <span class="header-center-desc text-translate" key="s7_3"
+                  >Earn</span
+                >
+              </li>
+            </ul>
+            <p class="video-desc text-translate" key="s1_2">
+              After entering Paraverse, players can earn tokens through games
+              and contributions to the ecosystem. Players can collect, train and
+              trade Para monster, at the same time direct them to do adventure
+              and battle to improve player's own game skills and strive to
+              become the most dazzling Para monster trainer on the Paraverse.
+            </p>
+          </div>
+          <!-- <img src="./images/img-exp-item-03.png?t=1640263574" alt="animal" class="video-animal-img" /> -->
         </div>
-        <div class="video-right">
-          <h3 class="video-title text-translate" key="s1_1">PARAVERSE NFT PLAY TO EARN GAME</h3>
-          <ul class="header-center-list">
-            <li class="header-center-item">
-              <img src="./images/img-egg_01.png?t=1640263574" alt="battle" class="header-center-img" />
-              <span class="header-center-desc text-translate" key="s7_1">Battle</span>
-            </li>
-            <li class="header-center-item">
-              <img src="./images/img-egg_02.png?t=1640263574" alt="collect" class="header-center-img" />
-              <span class="header-center-desc text-translate" key="s7_2">Collect</span>
-            </li>
-            <li class="header-center-item">
-              <img src="./images/img-egg_03.png?t=1640263574" alt="earn" class="header-center-img" />
-              <span class="header-center-desc text-translate" key="s7_3">Earn</span>
-            </li>
-          </ul>
-          <p class="video-desc text-translate" key="s1_2">
-            After entering Paraverse, players can earn tokens through games and contributions to the ecosystem. Players
-            can collect, train and trade Para monster, at the same time direct them to do adventure and battle to
-            improve player's own game skills and strive to become the most dazzling Para monster trainer on the
-            Paraverse.
+      </section>
+      <section class="exp">
+        <div class="exp-container">
+          <h3 class="exp-title text-translate" key="s2_1">
+            EXPLORE THE PARAVERSE WORLD
+          </h3>
+          <p class="exp-desc text-translate" key="s2_2">
+            Para monsters are super-powered creatures that live on Paraverse
+            World. Each Para monster has a unique superpower, unique appearance
+            and rarity. There are also super rare Para monsters waiting for you
+            to discover.
           </p>
-        </div>
-        <!-- <img src="./images/img-exp-item-03.png?t=1640263574" alt="animal" class="video-animal-img" /> -->
-      </div>
-    </section>
-    <section class="exp">
-      <div class="exp-container">
-        <h3 class="exp-title text-translate" key="s2_1">EXPLORE THE PARAVERSE WORLD</h3>
-        <p class="exp-desc text-translate" key="s2_2">
-          Para monsters are super-powered creatures that live on Paraverse World. Each Para monster has a unique
-          superpower, unique appearance and rarity. There are also super rare Para monsters waiting for you to discover.
-        </p>
-        <div class="exp-tab">
-          <ul class="exp-tab-content">
-            <li class="exp-tab-item is-active" data-tab="1">
-              <div class="exp-video">
-                <!-- <img src="./images/img-exp-content-01.png?t=1640263574" alt="animal" /> -->
-                <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
-                  <source src="./video/video-animals-dragon.mp4?t=1640263574">
-                </video>
-              </div>
-              <img src="./images/img-exp-item-dragon.png?t=1640263574" alt="animal" />
-            </li>
-            <li class="exp-tab-item" data-tab="2">
-              <div class="exp-video">
-                <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
-                  <source src="./video/video-animals-wolf.mp4?t=1640263574">
-                </video>
-              </div>
-              <img src="./images/img-exp-item-wolf.png?t=1640263574" alt="animal" />
-            </li>
-            <li class="exp-tab-item" data-tab="3">
-              <div class="exp-video">
-                <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
-                  <source src="./video/video-animals-soul.mp4?t=1640263574">
-                </video>
-              </div>
-              <img src="./images/img-exp-item-ghost.png?t=1640263574" alt="animal" />
-            </li>
-            <li class="exp-tab-item" data-tab="4">
-              <div class="exp-video">
-                <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
-                  <source src="./video/video-animals-sting.mp4?t=1640263574">
-                </video>
-              </div>
-              <img src="./images/img-exp-item-sting.png?t=1640263574" alt="animal" />
-            </li>
-            <li class="exp-tab-item" data-tab="5">
-              <div class="exp-video">
-                <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
-                  <source src="./video/video-animals-crab.mp4?t=1640263574">
-                </video>
-              </div>
-              <img src="./images/img-exp-item-crab.png?t=1640263574" alt="animal" />
-            </li>
-            <!-- <li class="exp-tab-item" data-tab="6">
+          <div class="exp-tab">
+            <ul class="exp-tab-content">
+              <li class="exp-tab-item is-active" data-tab="1">
+                <div class="exp-video">
+                  <!-- <img src="./images/img-exp-content-01.png?t=1640263574" alt="animal" /> -->
+                  <video
+                    class="exp-video-animal"
+                    playsinline
+                    autoplay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                  >
+                    <source
+                      src="./video/video-animals-dragon.mp4?t=1640263574"
+                    />
+                  </video>
+                </div>
+                <img
+                  src="./images/img-exp-item-dragon.png?t=1640263574"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-tab-item" data-tab="2">
+                <div class="exp-video">
+                  <video
+                    class="exp-video-animal"
+                    playsinline
+                    autoplay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                  >
+                    <source src="./video/video-animals-wolf.mp4?t=1640263574" />
+                  </video>
+                </div>
+                <img
+                  src="./images/img-exp-item-wolf.png?t=1640263574"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-tab-item" data-tab="3">
+                <div class="exp-video">
+                  <video
+                    class="exp-video-animal"
+                    playsinline
+                    autoplay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                  >
+                    <source src="./video/video-animals-soul.mp4?t=1640263574" />
+                  </video>
+                </div>
+                <img
+                  src="./images/img-exp-item-ghost.png?t=1640263574"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-tab-item" data-tab="4">
+                <div class="exp-video">
+                  <video
+                    class="exp-video-animal"
+                    playsinline
+                    autoplay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                  >
+                    <source
+                      src="./video/video-animals-sting.mp4?t=1640263574"
+                    />
+                  </video>
+                </div>
+                <img
+                  src="./images/img-exp-item-sting.png?t=1640263574"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-tab-item" data-tab="5">
+                <div class="exp-video">
+                  <video
+                    class="exp-video-animal"
+                    playsinline
+                    autoplay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                  >
+                    <source src="./video/video-animals-crab.mp4?t=1640263574" />
+                  </video>
+                </div>
+                <img
+                  src="./images/img-exp-item-crab.png?t=1640263574"
+                  alt="animal"
+                />
+              </li>
+              <!-- <li class="exp-tab-item" data-tab="6">
               <div class="exp-video">
                 <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
                   <source src="./video/video-animals06.mp4?t=1640263574">
@@ -300,7 +477,7 @@
               </div>
               <img src="./images/img-exp-content-06.png?t=1640263574" alt="animal" />
             </li> -->
-            <!-- <li class="exp-tab-item" data-tab="7">
+              <!-- <li class="exp-tab-item" data-tab="7">
               <div class="exp-video">
                 <video class="exp-video-animal" playsinline autoplay="autoplay" loop="loop" muted="muted">
                   <source src="./video/video-animals.mp4?t=1640263574">
@@ -308,251 +485,320 @@
               </div>
               <img src="./images/img-exp-content-07.png?t=1640263574" alt="animal" />
             </li> -->
-          </ul>
-          <ul class="exp-list">
-            <li class="exp-item is-actived">
-              <img src="./images/img-exp-item-av-dragon.png?t=1640263574" class="btn-tab exp-item-img" id="1"
-                alt="animal" />
-            </li>
-            <li class="exp-item">
-              <img src="./images/img-exp-item-av-wolf.png?t=1640263574" class="btn-tab exp-item-img" id="2"
-                alt="animal" />
-            </li>
-            <li class="exp-item">
-              <img src="./images/img-exp-item-av-ghost.png?t=1640263574" class="btn-tab exp-item-img" id="3"
-                alt="animal" />
-            </li>
-            <li class="exp-item">
-              <img src="./images/img-exp-item-av-sting.png?t=1640263574" class="btn-tab exp-item-img" id="4"
-                alt="animal" />
-            </li>
-            <li class="exp-item">
-              <img src="./images/img-exp-item-av-crab.png?t=1640263574" class="btn-tab exp-item-img" id="5"
-                alt="animal" />
-            </li>
-            <!-- <li class="exp-item">
+            </ul>
+            <ul class="exp-list">
+              <li class="exp-item is-actived">
+                <img
+                  src="./images/img-exp-item-av-dragon.png?t=1640263574"
+                  class="btn-tab exp-item-img"
+                  id="1"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-item">
+                <img
+                  src="./images/img-exp-item-av-wolf.png?t=1640263574"
+                  class="btn-tab exp-item-img"
+                  id="2"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-item">
+                <img
+                  src="./images/img-exp-item-av-ghost.png?t=1640263574"
+                  class="btn-tab exp-item-img"
+                  id="3"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-item">
+                <img
+                  src="./images/img-exp-item-av-sting.png?t=1640263574"
+                  class="btn-tab exp-item-img"
+                  id="4"
+                  alt="animal"
+                />
+              </li>
+              <li class="exp-item">
+                <img
+                  src="./images/img-exp-item-av-crab.png?t=1640263574"
+                  class="btn-tab exp-item-img"
+                  id="5"
+                  alt="animal"
+                />
+              </li>
+              <!-- <li class="exp-item">
               <img src="./images/img-exp-item-06.png?t=1640263574" class="btn-tab exp-item-img" id="6" alt="animal" />
             </li>
             <li class="exp-item">
               <img src="./images/img-exp-item-07.png?t=1640263574" class="btn-tab exp-item-img" id="7" alt="animal" />
             </li> -->
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="key">
-      <div class="key-container">
-        <h3 class="key-title text-translate" key="s4_1">MAPS</h3>
-        <p class="key-desc text-translate" key="s4_2">
-          Worlds with diverse landscapes from deserts, ruined cities, deep seas... help you satisfy the power of
-          discovery. In particular, each map will have interactions with Para monsters with different attributes to
-          increase or limit strength.
-        </p>
-        <!-- <img src="./images/img-stone.png?t=1640263574" alt="stone" class="key-stone-img" /> -->
-        <img src="./images/img-plate.webp" alt="plate" class="key-plate-img" />
-        <!-- <img src="./images/img-exp-item-07.png?t=1640263574" alt="animal" class="key-animal-img" /> -->
-      </div>
-    </section>
-    <section class="play">
-      <div class="play-container container">
-        <h3 class="play-title text-translate" key="s5_1">GAMEPLAY</h3>
-        <div class="play-content">
-          <div class="play-item">
-            <!-- <p class="play-left-desc">
+      </section>
+      <section class="key">
+        <div class="key-container">
+          <h3 class="key-title text-translate" key="s4_1">MAPS</h3>
+          <p class="key-desc text-translate" key="s4_2">
+            Worlds with diverse landscapes from deserts, ruined cities, deep
+            seas... help you satisfy the power of discovery. In particular, each
+            map will have interactions with Para monsters with different
+            attributes to increase or limit strength.
+          </p>
+          <!-- <img src="./images/img-stone.png?t=1640263574" alt="stone" class="key-stone-img" /> -->
+          <img
+            src="./images/img-plate.webp"
+            alt="plate"
+            class="key-plate-img"
+          />
+          <!-- <img src="./images/img-exp-item-07.png?t=1640263574" alt="animal" class="key-animal-img" /> -->
+        </div>
+      </section>
+      <section class="play">
+        <div class="play-container container">
+          <h3 class="play-title text-translate" key="s5_1">GAMEPLAY</h3>
+          <div class="play-content">
+            <div class="play-item">
+              <!-- <p class="play-left-desc">
               <strong>Kaby Arena</strong> is a tactical multiplayer role
               playing game which combines Free-to-Play and Play-to-Earn to
               provide an open economy for every player.
             </p> -->
-            <p class="play-left-desc text-translate" key="s5_2">
-              Collect, evolve, and trade unique NFT heroes to build the best adventure team. Rise through the ranks to
-              claim tournament rewards!
-            </p>
-            <img src="./images/img-play.png?t=1640263574" alt="play" class="play-img" />
-          </div>
-          <div class="play-item">
-            <div class="play-item-content">
-              <img src="./images/img-play-icon-01.png?t=1640263574" alt="play-free" class="play-item-img" />
-              <div class="play-item-right">
-                <h3 class="play-item-title">Free to play</h3>
-                <p class="play-item-desc text-translate" key="s5_3">
-                  Players start with basic non-NFT heroes. By playing, they can collect materials, armors and
-                  loot-boxes.
-                </p>
-                <p class="play-item-desc text-translate" key="s5_4">
-                  Free heroes & armors can be minted into NFT using Paraverse Token.
-                </p>
-              </div>
+              <p class="play-left-desc text-translate" key="s5_2">
+                Collect, evolve, and trade unique NFT heroes to build the best
+                adventure team. Rise through the ranks to claim tournament
+                rewards!
+              </p>
+              <img
+                src="./images/img-play.png?t=1640263574"
+                alt="play"
+                class="play-img"
+              />
             </div>
-            <div class="play-item-content">
-              <img src="./images/img-play-icon-02.png?t=1640263574" alt="play-free" class="play-item-img" />
-              <div class="play-item-right">
-                <h3 class="play-item-title">Play-to-earn</h3>
-                <p class="play-item-desc text-translate" key="s5_5">
-                  Gaming is not only for fun, it can earn you money: Play-to-earn with dynamic farming system and active
-                  market, every heroes/items can be minted into NFT.
-                </p>
+            <div class="play-item">
+              <div class="play-item-content">
+                <img
+                  src="./images/img-play-icon-01.png?t=1640263574"
+                  alt="play-free"
+                  class="play-item-img"
+                />
+                <div class="play-item-right">
+                  <h3 class="play-item-title">Free to play</h3>
+                  <p class="play-item-desc text-translate" key="s5_3">
+                    Players start with basic non-NFT heroes. By playing, they
+                    can collect materials, armors and loot-boxes.
+                  </p>
+                  <p class="play-item-desc text-translate" key="s5_4">
+                    Free heroes & armors can be minted into NFT using Paraverse
+                    Token.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="play-item-content">
-              <img src="./images/img-play-icon-03.png?t=1640263574" alt="play-free" class="play-item-img" />
-              <div class="play-item-right">
-                <h3 class="play-item-title text-translate" key="s5_8">Crypto war</h3>
-                <p class="play-item-desc text-translate" key="s5_9">
-                  Gameplay involves the crypto market - predict the market
-                  fluctuations correctly to earn in-game advantages.
-                </p>
+              <div class="play-item-content">
+                <img
+                  src="./images/img-play-icon-02.png?t=1640263574"
+                  alt="play-free"
+                  class="play-item-img"
+                />
+                <div class="play-item-right">
+                  <h3 class="play-item-title">Play-to-earn</h3>
+                  <p class="play-item-desc text-translate" key="s5_5">
+                    Gaming is not only for fun, it can earn you money:
+                    Play-to-earn with dynamic farming system and active market,
+                    every heroes/items can be minted into NFT.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="play-item-content">
-              <img src="./images/img-play-icon-04.png?t=1640263574" alt="play-free" class="play-item-img" />
-              <div class="play-item-right">
-                <h3 class="play-item-title text-translate" key="s5_6">Assets for rent</h3>
-                <p class="play-item-desc text-translate" key="s5_7">
-                  Solve blockchain & NFT games problem: enable users to put their assets for rent with high credibility.
-                </p>
+              <div class="play-item-content">
+                <img
+                  src="./images/img-play-icon-03.png?t=1640263574"
+                  alt="play-free"
+                  class="play-item-img"
+                />
+                <div class="play-item-right">
+                  <h3 class="play-item-title text-translate" key="s5_8">
+                    Crypto war
+                  </h3>
+                  <p class="play-item-desc text-translate" key="s5_9">
+                    Gameplay involves the crypto market - predict the market
+                    fluctuations correctly to earn in-game advantages.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="road" id="road-mobile">
-      <div class="container">
-        <h2 class="road-year">ROAD MAP</h2>
-        <div class="road-container">
-          <!-- <img src="./images/img-road-map.png?t=1640263574" alt="road" class="road-img"> -->
-          <div class="road-bottom">
-            <div class="road-content">
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">SEPTEMBER, 2021</span>
-                <h3 class="road-item-title">Game concept research</h3>
-                <p class="road-item-desc">
-                  Develop business model
-                </p>
-              </div>
-              <div class="road-item pd-left-sm">
-                <span class="road-item-time">NOVEMBER, 2021</span>
-                <h3 class="road-item-title">Graphic design</h3>
-                <p class="road-item-desc">Develop Tokenomics & NFTs </p>
-              </div>
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">DECEMBER, 2021</span>
-                <h3 class="road-item-title">Marketing campaign</h3>
-                <p class="road-item-desc">$PAME token public sale</p>
-                <p class="road-item-desc">
-                  Launch on PancakeSwap
-                </p>
-                <p class="road-item-desc">
-                  List on Coingecko and Coinmarketcap
-                </p>
-              </div>
-              <div class="road-item pd-left-sm">
-                <span class="road-item-time">November, 2021</span>
-                <h3 class="road-item-title">PvE game mode & Heroes fusion</h3>
-                <p class="road-item-desc">
-                  Players can start trading their treasure chests and in-game
-                  resources on the marketplace
-                </p>
-                <p class="road-item-desc">NFT minting is enabled</p>
-              </div>
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">December, 2021</span>
-                <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
-                <p class="road-item-desc">
-                  Rank system & Match-marking algorithm go online.
-                </p>
-                <p class="road-item-desc">PvP waging is enabled</p>
-                <p class="road-item-desc">
-                  Workshop to receive feedback from the community
-                </p>
-              </div>
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">December, 2021</span>
-                <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
-                <p class="road-item-desc">
-                  Rank system & Match-marking algorithm go online.
-                </p>
-                <p class="road-item-desc">PvP waging is enabled</p>
-                <p class="road-item-desc">
-                  Workshop to receive feedback from the community
-                </p>
-              </div>
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">December, 2021</span>
-                <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
-                <p class="road-item-desc">
-                  Rank system & Match-marking algorithm go online.
-                </p>
-                <p class="road-item-desc">PvP waging is enabled</p>
-                <p class="road-item-desc">
-                  Workshop to receive feedback from the community
-                </p>
-              </div>
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">December, 2021</span>
-                <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
-                <p class="road-item-desc">
-                  Rank system & Match-marking algorithm go online.
-                </p>
-                <p class="road-item-desc">PvP waging is enabled</p>
-                <p class="road-item-desc">
-                  Workshop to receive feedback from the community
-                </p>
-              </div>
-              <div class="road-item pd-left-lg">
-                <span class="road-item-time">December, 2021</span>
-                <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
-                <p class="road-item-desc">
-                  Rank system & Match-marking algorithm go online.
-                </p>
-                <p class="road-item-desc">PvP waging is enabled</p>
-                <p class="road-item-desc">
-                  Workshop to receive feedback from the community
-                </p>
+              <div class="play-item-content">
+                <img
+                  src="./images/img-play-icon-04.png?t=1640263574"
+                  alt="play-free"
+                  class="play-item-img"
+                />
+                <div class="play-item-right">
+                  <h3 class="play-item-title text-translate" key="s5_6">
+                    Assets for rent
+                  </h3>
+                  <p class="play-item-desc text-translate" key="s5_7">
+                    Solve blockchain & NFT games problem: enable users to put
+                    their assets for rent with high credibility.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <h2 class="road-footer">AND METAVERSE ?</h2>
-      </div>
-    </section>
+      </section>
+      <section class="road" id="road-mobile">
+        <div class="container">
+          <h2 class="road-year">ROAD MAP</h2>
+          <div class="road-container">
+            <!-- <img src="./images/img-road-map.png?t=1640263574" alt="road" class="road-img"> -->
+            <div class="road-bottom">
+              <div class="road-content">
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">SEPTEMBER, 2021</span>
+                  <h3 class="road-item-title">Game concept research</h3>
+                  <p class="road-item-desc">Develop business model</p>
+                </div>
+                <div class="road-item pd-left-sm">
+                  <span class="road-item-time">NOVEMBER, 2021</span>
+                  <h3 class="road-item-title">Graphic design</h3>
+                  <p class="road-item-desc">Develop Tokenomics & NFTs</p>
+                </div>
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">DECEMBER, 2021</span>
+                  <h3 class="road-item-title">Marketing campaign</h3>
+                  <p class="road-item-desc">$PAME token public sale</p>
+                  <p class="road-item-desc">Launch on PancakeSwap</p>
+                  <p class="road-item-desc">
+                    List on Coingecko and Coinmarketcap
+                  </p>
+                </div>
+                <div class="road-item pd-left-sm">
+                  <span class="road-item-time">November, 2021</span>
+                  <h3 class="road-item-title">PvE game mode & Heroes fusion</h3>
+                  <p class="road-item-desc">
+                    Players can start trading their treasure chests and in-game
+                    resources on the marketplace
+                  </p>
+                  <p class="road-item-desc">NFT minting is enabled</p>
+                </div>
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">December, 2021</span>
+                  <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
+                  <p class="road-item-desc">
+                    Rank system & Match-marking algorithm go online.
+                  </p>
+                  <p class="road-item-desc">PvP waging is enabled</p>
+                  <p class="road-item-desc">
+                    Workshop to receive feedback from the community
+                  </p>
+                </div>
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">December, 2021</span>
+                  <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
+                  <p class="road-item-desc">
+                    Rank system & Match-marking algorithm go online.
+                  </p>
+                  <p class="road-item-desc">PvP waging is enabled</p>
+                  <p class="road-item-desc">
+                    Workshop to receive feedback from the community
+                  </p>
+                </div>
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">December, 2021</span>
+                  <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
+                  <p class="road-item-desc">
+                    Rank system & Match-marking algorithm go online.
+                  </p>
+                  <p class="road-item-desc">PvP waging is enabled</p>
+                  <p class="road-item-desc">
+                    Workshop to receive feedback from the community
+                  </p>
+                </div>
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">December, 2021</span>
+                  <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
+                  <p class="road-item-desc">
+                    Rank system & Match-marking algorithm go online.
+                  </p>
+                  <p class="road-item-desc">PvP waging is enabled</p>
+                  <p class="road-item-desc">
+                    Workshop to receive feedback from the community
+                  </p>
+                </div>
+                <div class="road-item pd-left-lg">
+                  <span class="road-item-time">December, 2021</span>
+                  <h3 class="road-item-title">PvP game mode & Dev workshop</h3>
+                  <p class="road-item-desc">
+                    Rank system & Match-marking algorithm go online.
+                  </p>
+                  <p class="road-item-desc">PvP waging is enabled</p>
+                  <p class="road-item-desc">
+                    Workshop to receive feedback from the community
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="road-footer">AND METAVERSE ?</h2>
+        </div>
+      </section>
 
-    <section class="road" id="road-pc">
-      <div class="container">
-        <h2 class="road-year">ROAD MAP</h2>
-        <div class="road-container">
-          <div class="road-left">
-            <img src="./images/img-road-map-01.webp" alt="roadmap">
-          </div>
-          <!-- <div class="road-right">
+      <section class="road" id="road-pc">
+        <div class="container">
+          <h2 class="road-year">ROAD MAP</h2>
+          <div class="road-container">
+            <div class="road-left">
+              <img src="./images/img-road-map-01.webp" alt="roadmap" />
+            </div>
+            <!-- <div class="road-right">
             <img src="./images/img-road-map-02.png?t=1640263574" alt="roadmap">
           </div> -->
-        </div>
-      </div>
-    </section>
-
-    <section class="token">
-      <div class="token-container">
-        <h2 class="token-title">TOKEN ALLOCATION</h2>
-        <div class="token-chart">
-          <div class="token-chart-left">
-            <img src="./images/img-egg-token-01.png?t=1640263574" alt="animal" class="token-chart-img" />
-            <img src="./images/img-egg-token-02.png?t=1640263574" alt="animal" class="token-chart-img" />
-            <img src="./images/img-egg-token-03.png?t=1640263574" alt="animal" class="token-chart-img" />
-            <img src="./images/img-egg-token-04.png?t=1640263574" alt="animal" class="token-chart-img" />
-            <img src="./images/img-egg-token-05.png?t=1640263574" alt="animal" class="token-chart-img" />
           </div>
-          <div class="token-chart-right">
-            <img src="./images/img-chart.png?t=1640263574" alt="chart" />
-            <div class="token-chart-buy">
-              <span class="token-total"> Total Supply: 5,000,000,000</span>
-              <!-- <button class="token-btn">Buy Now</button> -->
+        </div>
+      </section>
+
+      <section class="token">
+        <div class="token-container">
+          <h2 class="token-title">TOKEN ALLOCATION</h2>
+          <div class="token-chart">
+            <div class="token-chart-left">
+              <img
+                src="./images/img-egg-token-01.png?t=1640263574"
+                alt="animal"
+                class="token-chart-img"
+              />
+              <img
+                src="./images/img-egg-token-02.png?t=1640263574"
+                alt="animal"
+                class="token-chart-img"
+              />
+              <img
+                src="./images/img-egg-token-03.png?t=1640263574"
+                alt="animal"
+                class="token-chart-img"
+              />
+              <img
+                src="./images/img-egg-token-04.png?t=1640263574"
+                alt="animal"
+                class="token-chart-img"
+              />
+              <img
+                src="./images/img-egg-token-05.png?t=1640263574"
+                alt="animal"
+                class="token-chart-img"
+              />
+            </div>
+            <div class="token-chart-right">
+              <img src="./images/img-chart.png?t=1640263574" alt="chart" />
+              <div class="token-chart-buy">
+                <span class="token-total"> Total Supply: 5,000,000,000</span>
+                <!-- <button class="token-btn">Buy Now</button> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- <section class="exc">
+      </section>
+      <!-- <section class="exc">
       <div class="exc-container">
         <h2 class="exc-title text-translate" key="s6_1">EXCITING FUTURE</h2>
         <p class="exc-desc text-translate" key="s6_2">
@@ -593,89 +839,169 @@
         <img src="./images/img-exc-bg-03.png?t=1640263574" alt="anime" />
       </div>
     </section> -->
-    <footer class="footer">
-      <div class="footer-container">
-        <h3 class="footer-title">PARTNERS & BACKERS</h3>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <img src="./images/img-footer-01.png?t=1640263574" alt="binance chain" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-02.png?t=1640263574" alt="binance chain" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-03.png?t=1640263574" alt="yoo shi" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-04.png?t=1640263574" alt="coin market cap" />
-          </li>
-        </ul>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <img src="./images/img-footer-05.png?t=1640263574" alt="binance chain" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-06.png?t=1640263574" alt="yoo shi" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-07.png?t=1640263574" alt="coin market cap" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-08.png?t=1640263574" alt="coin market cap" />
-          </li>
-        </ul>
-        <h3 class="footer-title footer-sub-title">STRATEGIC COOPERATION</h3>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <img src="./images/img-footer-09.png?t=1640263574" alt="yoo shi" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-10.png?t=1640263574" alt="coin market cap" />
-          </li>
-          <li class="footer-item">
-            <img src="./images/img-footer-11.png?t=1640263574" alt="coin market cap" />
-          </li>
-        </ul>
-        <ul class="footer-icon-list">
-          <li class="header-contact-item">
-            <a href="https://medium.com/@paraverse_game" target="_blank" class="header-contact-link">
-              <img src="./images/img-medium.svg?t=1640263574" alt="medium" class="header-contact-img" />
-            </a>
-          </li>
-          <li class="header-contact-item">
-            <a href="https://t.me/Paraversechannel" target="_blank" class="header-contact-link">
-              <img src="./images/img-telegram.svg?t=1640263574" alt="telegram" class="header-contact-img" />
-            </a>
-          </li>
-          <li class="header-contact-item">
-            <a href="https://twitter.com/paraverse_game" target="_blank" class="header-contact-link">
-              <img src="./images/img-twitter.svg?t=1640263574" alt="twitter" class="header-contact-img" />
-            </a>
-          </li>
-          <li class="header-contact-item">
-            <a href="https://discord.gg/MxudrEZkrg" target="_blank" class="header-contact-link">
-              <img src="./images/img-discord.svg?t=1640263574" alt="discord" class="header-contact-img" />
-            </a>
-          </li>
-          <li class="header-contact-item">
-            <a href="https://www.youtube.com/channel/UCoi4uz4M1M8ZDL-YnxjKRGQ" target="_blank"
-              class="header-contact-link">
-              <img src="./images/img-youtube.png?t=1640263574" alt="medium" class="header-contact-img" />
-            </a>
-          </li>
-        </ul>
-        <div class="footer-bottom">
-          <p class="footer-bottom-desc">
-            Copyright &copy; 2021 Paraverse.ai All Rights Reserved
-          </p>
+      <footer class="footer">
+        <div class="footer-container">
+          <h3 class="footer-title">PARTNERS & BACKERS</h3>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-01.png?t=1640263574"
+                alt="binance chain"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-02.png?t=1640263574"
+                alt="binance chain"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-03.png?t=1640263574"
+                alt="yoo shi"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-04.png?t=1640263574"
+                alt="coin market cap"
+              />
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-05.png?t=1640263574"
+                alt="binance chain"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-06.png?t=1640263574"
+                alt="yoo shi"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-07.png?t=1640263574"
+                alt="coin market cap"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-08.png?t=1640263574"
+                alt="coin market cap"
+              />
+            </li>
+          </ul>
+          <h3 class="footer-title footer-sub-title">STRATEGIC COOPERATION</h3>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-09.png?t=1640263574"
+                alt="yoo shi"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-10.png?t=1640263574"
+                alt="coin market cap"
+              />
+            </li>
+            <li class="footer-item">
+              <img
+                src="./images/img-footer-11.png?t=1640263574"
+                alt="coin market cap"
+              />
+            </li>
+          </ul>
+          <ul class="footer-icon-list">
+            <li class="header-contact-item">
+              <a
+                href="https://medium.com/@paraverse_game"
+                target="_blank"
+                class="header-contact-link"
+              >
+                <img
+                  src="./images/img-medium.svg?t=1640263574"
+                  alt="medium"
+                  class="header-contact-img"
+                />
+              </a>
+            </li>
+            <li class="header-contact-item">
+              <a
+                href="https://t.me/Paraversechannel"
+                target="_blank"
+                class="header-contact-link"
+              >
+                <img
+                  src="./images/img-telegram.svg?t=1640263574"
+                  alt="telegram"
+                  class="header-contact-img"
+                />
+              </a>
+            </li>
+            <li class="header-contact-item">
+              <a
+                href="https://twitter.com/paraverse_game"
+                target="_blank"
+                class="header-contact-link"
+              >
+                <img
+                  src="./images/img-twitter.svg?t=1640263574"
+                  alt="twitter"
+                  class="header-contact-img"
+                />
+              </a>
+            </li>
+            <li class="header-contact-item">
+              <a
+                href="https://discord.gg/MxudrEZkrg"
+                target="_blank"
+                class="header-contact-link"
+              >
+                <img
+                  src="./images/img-discord.svg?t=1640263574"
+                  alt="discord"
+                  class="header-contact-img"
+                />
+              </a>
+            </li>
+            <li class="header-contact-item">
+              <a
+                href="https://www.youtube.com/channel/UCoi4uz4M1M8ZDL-YnxjKRGQ"
+                target="_blank"
+                class="header-contact-link"
+              >
+                <img
+                  src="./images/img-youtube.png?t=1640263574"
+                  alt="medium"
+                  class="header-contact-img"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="footer-bottom">
+            <p class="footer-bottom-desc">
+              Copyright &copy; 2021 Paraverse.ai All Rights Reserved
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./scripts/index.js"></script>
-</body>
-
+      </footer>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
