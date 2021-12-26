@@ -1214,7 +1214,6 @@ button {
   font-weight: 500;
   padding-bottom: 2rem;
   position: relative;
-  margin-bottom: 5rem;
   text-align: center;
 }
 .play-title::after {
@@ -1299,6 +1298,9 @@ button {
   }
 }
 @media screen and (max-width: 1023px) {
+  .play {
+    padding: 5rem 0 3rem;
+  }
   .play-item:nth-child(2) {
     margin-top: 5rem;
   }

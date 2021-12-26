@@ -7,7 +7,6 @@
     font-weight: 500;
     padding-bottom: 2rem;
     position: relative;
-    margin-bottom: 5rem;
     text-align: center;
     &::after {
       content: "";
@@ -81,6 +80,7 @@
     }
   }
   @include maxWidth(1023px) {
+    padding: 5rem 0 3rem;
     &-item:nth-child(2) {
       margin-top: 5rem;
     }
